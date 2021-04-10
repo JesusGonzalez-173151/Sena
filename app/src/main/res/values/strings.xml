@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Sena</string>
+
+    <string name="estas_preparado_t">¿Estás preparado?</string>
+    <string name="estas_preparado_p">¡Sena te da la bienvenida! Ella te apoyará en el camino al éxito de tu control de finanzas.</string>
+    <string name="sera_sencillo_facil_t">Será fácil y sencillo</string>
+    <string name="sera_sencillo_facil_p">Sena mejora la forma en la que capturas tus ingresos y egresos, haciéndolo más dinámico para ti.</string>
+    <string name="una_nueva_aventura_t">Una nueva aventura</string>
+    <string name="una_nueva_aventura_p">Sena te seguirá a través de este nuevo mundo de tus finanzas personales.</string>
+    <string name="Tu_mayor_motivacion_para_ahorrar_t">Tu mayor motivación para ahorrar</string>
+    <string name="Tu_mayor_motivacion_para_ahorrar_q">¿Cuál es?</string>
+    <string name="Tu_mayor_motivacion_para_ahorrar_p">Selecciona la opción que más se adecúa a tu situación <actual class=""></actual></string>
+    <string name="btn_text_viajar">Viajar</string>
+    <string name="btn_text_emprender">Emprender</string>
+    <string name="btn_text_otro">Otro</string>
+    <string name="btn_text_Ropa">Ropa</string>
+    <string name="btn_text_empecemos">¡Empecemos!</string>
+    <string name="btn_text_ahorremos">¡Ahorremos!</string>
+</resources>

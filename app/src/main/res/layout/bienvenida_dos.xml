@@ -21,7 +21,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:paddingHorizontal="5dp"
-            android:text="@string/estas_preparado_t"
+            android:text="@string/sera_sencillo_facil_t"
             android:textAlignment="center"
             android:textSize="30sp"
             android:textStyle="bold"
@@ -33,7 +33,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
 
-            android:text="@string/estas_preparado_p"
+            android:text="@string/sera_sencillo_facil_p"
             android:textAlignment="center"
             android:textSize="15sp"
             android:layout_marginHorizontal="104dp"
@@ -42,7 +42,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/carita_star"
+            android:src="@drawable/carita_festejo"
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
             />

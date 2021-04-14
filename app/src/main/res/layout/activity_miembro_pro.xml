@@ -7,6 +7,21 @@
     android:layout_height="match_parent"
     android:background="@color/background_color">
 
+    <ImageView
+        android:layout_width="93dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/logoGrafico2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PRO"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        />
 
     <TextView
         android:layout_width="wrap_content"

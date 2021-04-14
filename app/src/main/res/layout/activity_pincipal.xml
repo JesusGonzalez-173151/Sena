@@ -1,39 +1,63 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/grey_motivation">
-    <TextView
+
+    <TableRow
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Tu_mayor_motivacion_para_ahorrar_t"
+        android:layout_marginTop="10dp"
+        >
+    <ImageView
+        android:layout_marginLeft="15dp"
+        android:id="@+id/imageView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/user" />
+
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hoal,Ana"
         android:textColor="@color/black"
         android:textSize="20dp"
         android:layout_gravity="center"
         />
 
-
+    </TableRow>
 
     <TextView
         android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Tu_mayor_motivacion_para_ahorrar_q"
+        android:text="Palabra del dia"
         android:textColor="@color/black"
         android:textSize="20dp"
-        android:layout_gravity="center"
+        android:layout_marginLeft="40sp"
         />
 
     <SearchView
         android:layout_gravity="center"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
         android:background="@drawable/round_button3"/>
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mis Metas"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_marginLeft="40dp"
+        />
     <RadioGroup
         android:layout_width="wrap_content"
         android:layout_height="70dp"
-        android:layout_marginTop="30dp"
         android:paddingHorizontal="10dp"
         android:layout_gravity="center"
         android:id="@+id/row1"

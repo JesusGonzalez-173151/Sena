@@ -1,0 +1,124 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_motivation">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Tu_mayor_motivacion_para_ahorrar_t"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Tu_mayor_motivacion_para_ahorrar_q"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:paddingHorizontal="10dp"
+        android:layout_gravity="center"
+        android:id="@+id/row1"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/round_button3"
+            android:text="Viajar"
+            android:layout_marginHorizontal="5dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:button="@android:color/transparent"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
+        <RadioButton
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:text="Emprender"
+            android:background="@drawable/round_button3"
+            android:layout_marginHorizontal="5dp"
+            android:textAlignment="center"
+            android:button="@android:color/transparent"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:paddingHorizontal="10dp"
+        android:layout_gravity="center"
+        android:id="@+id/row2"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:text="Otro"
+            android:background="@drawable/round_button3"
+            android:layout_marginHorizontal="5dp"
+            android:textAlignment="center"
+            android:button="@android:color/transparent"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
+        <RadioButton
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:text="Ropa"
+            android:background="@drawable/round_button3"
+            android:layout_marginHorizontal="5dp"
+            android:textAlignment="center"
+            android:button="@android:color/transparent"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
+
+
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:textSize="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Tu_mayor_motivacion_para_ahorrar_p"
+            android:textAlignment="center" />
+
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:id="@+id/btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_button"
+            android:text="@string/btn_text_ahorremos"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

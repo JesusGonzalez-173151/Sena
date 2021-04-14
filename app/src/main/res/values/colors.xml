@@ -10,5 +10,6 @@
 
     <color name="orange_inicio">#ffd550</color>
     <color name="grey_motivation">#f2f2f2</color>
+    <color name="background_color">#9B9594</color>
 
 </resources>

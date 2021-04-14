@@ -1,0 +1,139 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iniciar Sesion"
+        android:textSize="30dp"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Numero de telefono"
+        android:textSize="25dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/background_color"
+        />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/TextPhone"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/round_button3"
+            android:ems="10"
+            android:textColor="@color/background_color"
+            android:text="MX +52"
+            android:textAlignment="center"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/Phone"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/round_button3"
+            android:ems="10"
+            android:textColor="@color/background_color"
+            android:text="xxx-xxx-xxx"
+            android:textAlignment="center"
+            android:inputType="phone" />
+    </TableRow>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contrasenia"
+        android:textSize="25dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/background_color"
+        android:layout_marginTop="5dp"
+        />
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:ems="10"
+        android:textColor="@color/background_color"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="20dp"
+        android:inputType="textPassword"
+        android:background="@drawable/round_button3"/>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recuerdame"
+            android:textColor="@color/background_color"/>
+
+        <Button
+            android:id="@+id/button2"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recuperar contrasenia"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/round_button"/>
+
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        >
+        <Button
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:id="@+id/btnregistrarse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_button"
+            android:text="Registrate"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:id="@+id/btnlogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_button"
+            android:text="Ingresar"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+
+
+    </TableRow>
+
+
+</LinearLayout>

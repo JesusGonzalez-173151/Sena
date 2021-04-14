@@ -1,0 +1,119 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_motivation"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Configuracion de Perfil"
+        android:textSize="30dp"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Moneda"
+        android:textSize="25dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/background_color"
+        />
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="@color/background_color"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="20dp"
+        android:inputType="textPersonName"
+        android:text="Pesos Mexicanos"
+        android:background="@drawable/round_button3"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Filtros"
+        android:textSize="25dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/background_color"
+        />
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:text="Todas las cuentas"
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="@color/background_color"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="20dp"
+        android:inputType="text"
+        android:background="@drawable/round_button3"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Formato de informacion"
+        android:textSize="25dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/background_color"
+        />
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/TextPasswordConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text="Mensual"
+        android:textColor="@color/background_color"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="20dp"
+        android:inputType="text"
+        android:background="@drawable/round_button3"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:text="En estos momentos cuentas con una version gratuita de Sena: Finanzas Personales"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:text="Mejora tu rendimiento haciendote miembro distinguido!"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        />
+
+    <Button
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button3"
+        android:text="Senna PRO"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+
+</LinearLayout>

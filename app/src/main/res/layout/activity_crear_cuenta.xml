@@ -1,0 +1,137 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Crea tu cuenta"
+        android:textSize="30dp"
+        android:layout_gravity="center"
+        />
+
+    <ImageButton
+        android:layout_gravity="center"
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:srcCompat="@tools:sample/avatars"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre Completo"
+        android:textSize="25dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/white"
+        />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="@color/background_color"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="20dp"
+        android:inputType="textPersonName"
+        android:text="Escribe aqui tu nombre completo"
+        android:background="@drawable/round_button"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Numero de telefono"
+        android:textSize="25dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/white"
+        />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="42dp">
+
+        <EditText
+            android:id="@+id/TextPhone"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/round_button"
+            android:ems="10"
+            android:textColor="@color/background_color"
+            android:text="MX +52"
+            android:textAlignment="center"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/Phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/round_button"
+            android:ems="10"
+            android:textColor="@color/background_color"
+            android:text="xxx-xxx-xxx"
+            android:textAlignment="center"
+            android:inputType="phone" />
+    </TableRow>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contrasenia"
+        android:textSize="25dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/white"
+        />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="@color/background_color"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="20dp"
+        android:inputType="textPassword"
+        android:background="@drawable/round_button"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirmar Contrasenia"
+        android:textSize="25dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/white"
+        />
+
+    <EditText
+        android:id="@+id/TextPasswordConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="@color/background_color"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="20dp"
+        android:inputType="textPassword"
+        android:background="@drawable/round_button"/>
+
+    <Button
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button"
+        android:text=">"
+        android:textColor="@android:color/white"
+        android:textSize="40sp" />
+
+
+</LinearLayout>
+

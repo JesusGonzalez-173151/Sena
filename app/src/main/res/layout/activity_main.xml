@@ -8,12 +8,13 @@
     android:background="@drawable/fondo_inicio"
     tools:context=".MainActivity">
 
-    <ImageView android:id="@android:id/empty"
-        android:src="@drawable/logomio"
+    <ImageView
+        android:id="@android:id/empty"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_gravity="center"
-        android:scaleType="center" />
+        android:scaleType="center"
+        android:src="@drawable/logosena_blanco" />
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewPager"

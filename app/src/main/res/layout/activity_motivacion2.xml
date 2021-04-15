@@ -2,11 +2,15 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-
     android:orientation="vertical"
-
     android:layout_height="match_parent"
     android:background="@color/grey_motivation">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/boton_back"
+        />
 
     <TextView
         android:layout_width="wrap_content"
@@ -14,8 +18,20 @@
         android:layout_marginTop="200dp"
         android:gravity="center"
         android:text="@string/motivacion2"
-        android:textColor="@color/black"
-        android:textSize="20dp"
+        android:textColor="@color/bienvenidas_title"
+        android:textSize="25dp"
+        android:fontFamily="@font/objectsans_heavy"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Tu_mayor_motivacion_para_ahorrar_q"
+        android:textColor="@color/grey_cuales"
+        android:textSize="15sp"
+        android:fontFamily="@font/objectsans_regular"
         android:layout_gravity="center"
         />
 
@@ -23,7 +39,7 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/star"
+        android:src="@drawable/star_user"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
         />
@@ -36,14 +52,7 @@
         android:layout_marginTop="100dp"
         android:orientation="vertical">
 
-        <TextView
-            android:textSize="25dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="@string/motivacion2"
-            android:inputType="text"
-            android:layout_gravity="center"
-            android:textAlignment="center" />
+
 
 
         <Button
@@ -52,10 +61,11 @@
             android:id="@+id/btn_next"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/round_button"
+            android:background="@drawable/boton_1"
             android:text="@string/btn_text_ahorremos"
             android:textColor="@android:color/white"
-            android:textSize="20sp" />
+            android:textSize="21sp"
+            android:fontFamily="@font/objectsans_heavy"/>
 
     </LinearLayout>
 

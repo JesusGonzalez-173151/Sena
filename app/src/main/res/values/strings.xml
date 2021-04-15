@@ -17,5 +17,7 @@
     <string name="btn_text_empecemos">¡Empecemos!</string>
     <string name="btn_text_ahorremos">¡Ahorremos!</string>
     <string name="motivacion2">Tu mayor motivacion para ahorrar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

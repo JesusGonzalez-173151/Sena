@@ -4,13 +4,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/grey_motivation">
+
+
     <TextView
-        android:layout_marginTop="150dp"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/Tu_mayor_motivacion_para_ahorrar_t"
-        android:textColor="@color/black"
-        android:textSize="20dp"
+        android:textColor="@color/bienvenidas_title"
+        android:textSize="25sp"
+        android:fontFamily="@font/objectsans_heavy"
+        android:textAlignment="center"
         android:layout_gravity="center"
         />
 
@@ -19,8 +23,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/Tu_mayor_motivacion_para_ahorrar_q"
-        android:textColor="@color/black"
-        android:textSize="20dp"
+        android:textColor="@color/grey_cuales"
+        android:textSize="15sp"
+        android:fontFamily="@font/objectsans_regular"
         android:layout_gravity="center"
         />
     <RadioGroup
@@ -35,25 +40,26 @@
         <RadioButton
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:background="@drawable/round_button3"
+            android:background="@drawable/boton_4opciones"
             android:text="Viajar"
             android:layout_marginHorizontal="5dp"
             android:textAlignment="center"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:button="@android:color/transparent"
-            android:textSize="20dp"
-            android:textStyle="bold"
+            android:textSize="17sp"
+            android:fontFamily="@font/objectsans_heavy"
             />
         <RadioButton
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:text="Emprender"
-            android:background="@drawable/round_button3"
+            android:background="@drawable/boton_4opciones"
             android:layout_marginHorizontal="5dp"
             android:textAlignment="center"
             android:button="@android:color/transparent"
-            android:textSize="20dp"
-            android:textStyle="bold"
+            android:textSize="17sp"
+            android:fontFamily="@font/objectsans_heavy"
+            android:textColor="@color/white"
             />
 
     </RadioGroup>
@@ -72,27 +78,25 @@
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:text="Otro"
-            android:background="@drawable/round_button3"
+            android:background="@drawable/boton_4opciones"
             android:layout_marginHorizontal="5dp"
             android:textAlignment="center"
             android:button="@android:color/transparent"
-            android:textSize="20dp"
-            android:textStyle="bold"
+            android:textSize="17sp"
+            android:fontFamily="@font/objectsans_heavy"
+            android:textColor="@color/white"
             />
         <RadioButton
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:text="Ropa"
-            android:background="@drawable/round_button3"
+            android:background="@drawable/boton_4opciones"
             android:layout_marginHorizontal="5dp"
             android:textAlignment="center"
             android:button="@android:color/transparent"
-            android:textSize="20dp"
-            android:textStyle="bold"
-            />
-
-
-
+            android:textSize="17sp"
+            android:fontFamily="@font/objectsans_heavy"
+            android:textColor="@color/white"/>
     </RadioGroup>
 
     <LinearLayout
@@ -102,23 +106,29 @@
         android:orientation="vertical">
 
         <TextView
-            android:textSize="25dp"
+            android:textSize="15sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/Tu_mayor_motivacion_para_ahorrar_p"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:fontFamily="@font/objectsans_regular"
+            android:textColor="@color/grey_cuales"
+            />
 
 
         <Button
+            android:id="@+id/btn_next"
             android:layout_marginTop="20dp"
             android:layout_gravity="center"
-            android:id="@+id/btn_next"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/round_button"
+
+            android:background="@drawable/boton_2"
             android:text="@string/btn_text_ahorremos"
             android:textColor="@android:color/white"
-            android:textSize="20sp" />
+            android:textSize="21sp"
+            android:fontFamily="@font/objectsans_heavy"
+            />
 
     </LinearLayout>
 

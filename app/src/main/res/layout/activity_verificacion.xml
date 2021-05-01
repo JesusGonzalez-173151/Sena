@@ -1,18 +1,32 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/grey_motivation">
 
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/boton_back"
+        />
+
+    <ImageView
+        android:layout_width="93dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/logoGrafico2" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Verifcacion"
         android:layout_gravity="center"
-        android:textColor="@color/black"
-        android:textSize="30dp"
-        />
+        android:text="Verifcacion"
+        android:textColor="@color/bienvenidas_title"
+        android:textSize="30dp" />
 
     <TextView
         android:layout_marginTop="20dp"
@@ -85,17 +99,19 @@
         android:layout_gravity="center"
         android:layout_marginTop="40dp"
         android:textSize="20dp"
+        android:textColor="@color/orange_yellow_inicio"
         android:text="Reenviar codigo de verificacion"/>
 
     <Button
-        android:layout_marginTop="40dp"
-        android:layout_gravity="center"
         android:id="@+id/btn_next"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
         android:background="@drawable/round_button2"
-        android:text=">"
-        android:textSize="40sp" />
+        android:textSize="40sp"
+        app:icon="@drawable/flecha_derecha"
+        app:iconTint="@color/bienvenidas_title" />
 
 
 </LinearLayout>

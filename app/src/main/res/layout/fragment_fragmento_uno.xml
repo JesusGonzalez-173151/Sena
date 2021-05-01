@@ -8,62 +8,67 @@
 
 <LinearLayout
     android:layout_width="match_parent"
-    android:layout_height="280dp">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/boton_back" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="224dp"
+        android:background="#FFFFFF"
+        android:src="@drawable/trazado" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/OBJECTSANS_HEAVY"
+        android:paddingHorizontal="5dp"
+        android:text="@string/estas_preparado_t"
+        android:textAlignment="center"
+        android:textColor="@color/bienvenidas_title"
+        android:textSize="25sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="105dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/OBJECTSANS_REGULAR"
+        android:text="@string/estas_preparado_p"
+        android:textAlignment="center"
+        android:textSize="15sp" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/trazado" />
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/cara_star" />
 
-<ImageButton
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:src="@drawable/boton_back"
-    />
+    <ImageButton
+        android:id="@+id/botonP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/boton_next"/>
+
+
+
+
+
+
+
+
+
+
+
 
 </LinearLayout>
-    <LinearLayout
-        android:layout_marginTop="280dp"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:paddingHorizontal="5dp"
-            android:text="@string/estas_preparado_t"
-            android:textAlignment="center"
-            android:textSize="25sp"
-            android:fontFamily="@font/objectsans_heavy"
-            android:textColor="@color/bienvenidas_title"
-            />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="105dp"
-            android:layout_marginTop="10dp"
-            android:fontFamily="@font/objectsans_regular"
-            android:text="@string/estas_preparado_p"
-            android:textAlignment="center"
-            android:textSize="15sp" />
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/cara_star"
-            android:layout_gravity="center"
-            android:layout_marginTop="30dp"
-            />
-
-        <ImageButton
-            android:id="@+id/botonP"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:src="@drawable/boton_next"/>
-
-    </LinearLayout>
 </FrameLayout>

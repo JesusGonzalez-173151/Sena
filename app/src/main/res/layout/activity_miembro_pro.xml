@@ -5,169 +5,198 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background_color">
+    android:background="@drawable/fondo_inicio">
 
-    <ImageView
-        android:layout_width="93dp"
-        android:layout_height="100dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="50dp"
-        android:src="@drawable/logoGrafico2" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="PRO"
-        android:textSize="25dp"
-        android:textColor="@color/white"
-        android:layout_gravity="center"
-        />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Ingresa tu tarjeta"
-        android:textSize="25dp"
-        android:textColor="@color/white"
-        android:layout_gravity="center"
-        />
-
-     <TextView
-         android:layout_marginTop="10dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Nombre Completo del titular"
-        android:textSize="25dp"
-        android:layout_marginLeft="20dp"
-        android:textColor="@color/white"
-        />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:textColor="@color/background_color"
-        android:layout_marginRight="15dp"
-        android:layout_marginLeft="20dp"
-        android:inputType="textPersonName"
-        android:text="Escribe aqui nombre completo"
-        android:background="@drawable/round_button"/>
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Numero de tarjeta"
-        android:textSize="25dp"
-        android:layout_marginLeft="20dp"
-        android:textColor="@color/white"
-        />
+            <ImageView
+                android:layout_width="93dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/logosena_blanco" />
 
-        <EditText
-            android:id="@+id/Phone"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:background="@drawable/round_button"
-            android:ems="10"
-            android:textColor="@color/background_color"
-            android:text="XXXX-XXXX-XXXX-XXX"
-            android:textAlignment="center"
-            android:inputType="phone" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PRO"
+                android:textSize="50dp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                />
 
-<TableRow
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    >
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Fecha de expiracion"
-        android:textSize="25dp"
-        android:layout_marginLeft="20dp"
-        android:textColor="@color/white"
-        />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="CVV"
-        android:textSize="25dp"
-        android:layout_marginLeft="20dp"
-        android:textColor="@color/white"
-        />
-
-</TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ingresa tu tarjeta"
+                android:textSize="40dp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                />
 
 
-    <TableRow
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp">
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre Completo del titular"
+                android:textSize="25dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/white"
+                />
 
-        <EditText
-            android:layout_marginTop="5dp"
-            android:id="@+id/editMonth"
-            android:layout_width="70dp"
-            android:layout_height="30dp"
-            android:ems="2"
-            android:background="@drawable/round_button"
-            android:inputType="number"
-            />
-        <EditText
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="5dp"
-            android:id="@+id/editYear"
-            android:layout_width="70dp"
-            android:layout_height="30dp"
-            android:ems="2"
-            android:background="@drawable/round_button"
-            android:inputType="number"
-            />
+            <EditText
+                android:id="@+id/editTextTextPersonName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="@color/background_color"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="20dp"
+                android:inputType="textPersonName"
+                android:text="Escribe aqui nombre completo"
+                android:background="@drawable/round_button"/>
 
-        <EditText
-            android:layout_marginLeft="80dp"
-            android:layout_marginTop="5dp"
-            android:id="@+id/editCode"
-            android:layout_width="70dp"
-            android:layout_height="30dp"
-            android:ems="3"
-            android:background="@drawable/round_button"
-            android:inputType="number"
-            />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Numero de tarjeta"
+                android:textSize="25dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/white"
+                />
 
-    </TableRow>
+            <EditText
+                android:id="@+id/Phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/round_button"
+                android:ems="10"
+                android:textColor="@color/background_color"
+                android:text="XXXX-XXXX-XXXX-XXX"
+                android:textAlignment="center"
+                android:inputType="phone" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Tipo de tarjeta"
-        android:textSize="25dp"
-        android:layout_marginLeft="20dp"
-        android:textColor="@color/white"
-        />
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fecha de expiracion"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/white"
+                    />
 
-    <EditText
-        android:id="@+id/TextPasswordConfirm"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:textColor="@color/background_color"
-        android:layout_marginRight="15dp"
-        android:layout_marginLeft="20dp"
-        android:inputType="textPassword"
-        android:background="@drawable/round_button"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="CVV"
+                    android:textColor="@color/white"
+                    android:textSize="25dp" />
 
-    <Button
-        android:layout_marginTop="15dp"
-        android:layout_gravity="center"
-        android:id="@+id/btn_next"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/round_button3"
-        android:text=">"
-        android:textColor="@android:color/white"
-        android:textSize="40sp" />
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp">
+
+                <EditText
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/editMonth"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:ems="2"
+                    android:background="@drawable/round_button"
+                    android:inputType="number"
+                    />
+                <EditText
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/editYear"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:ems="2"
+                    android:background="@drawable/round_button"
+                    android:inputType="number"
+                    />
+
+                <EditText
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/editCode"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:ems="3"
+                    android:background="@drawable/round_button"
+                    android:inputType="number"
+                    />
+
+            </TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tipo de tarjeta"
+                android:textSize="25dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/white"
+                />
+
+            <EditText
+                android:id="@+id/TextPasswordConfirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="@color/background_color"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="20dp"
+                android:inputType="textPassword"
+                android:background="@drawable/round_button"/>
+
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/round_button"
+                android:text=">"
+                android:textColor="@color/bienvenidas_title"
+                android:textSize="40sp"
+                app:backgroundTint="@color/grey_motivation" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
 
 
 </LinearLayout>

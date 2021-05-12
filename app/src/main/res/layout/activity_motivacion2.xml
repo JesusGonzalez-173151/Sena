@@ -6,8 +6,17 @@
     android:orientation="vertical"
     android:layout_height="match_parent"
     android:background="@color/grey_motivation">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <ImageButton
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+
+        <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/boton_back"
@@ -20,7 +29,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="50dp"
         android:fontFamily="@font/OBJECTSANS_HEAVY"
         android:gravity="center"
         android:text="@string/motivacion2"
@@ -43,14 +52,14 @@
         android:layout_height="wrap_content"
         android:src="@drawable/star_user"
         android:layout_gravity="center"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         />
 
     <EditText
         android:id="@+id/editTextMortivacion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="40dp"
         android:ems="10"
         android:textColor="@color/background_color"
         android:layout_gravity="center"
@@ -70,7 +79,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="20dp"
             android:background="@drawable/boton_1"
             android:fontFamily="@font/OBJECTSANS_HEAVY"
             android:text="@string/btn_text_ahorremos"
@@ -79,5 +87,7 @@
             app:backgroundTint="@color/orange_yellow_inicio" />
 
     </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>

@@ -6,10 +6,15 @@
     android:orientation="vertical"
     tools:context=".fragmento_dos">
 
-  <LinearLayout
-      android:layout_width="match_parent"
-      android:layout_height="match_parent"
-      android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
 
       <ImageButton
           android:layout_width="wrap_content"
@@ -67,7 +72,7 @@
 
 
   </LinearLayout>
-
+    </ScrollView>
 
 
 

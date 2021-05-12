@@ -6,13 +6,18 @@
     android:orientation="vertical"
     tools:context=".fragmento_tres">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_height="match_parent">
 
 
-        <ImageButton
+
+    <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/boton_back" />
@@ -53,7 +58,7 @@
             android:layout_height="wrap_content"
             android:src="@drawable/cara_lente"
             android:layout_gravity="center"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
             />
 
         <ImageButton
@@ -66,4 +71,5 @@
             android:src="@drawable/boton_1"/>
 
     </LinearLayout>
+    </ScrollView>
 </FrameLayout>

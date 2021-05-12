@@ -5,6 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/grey_motivation">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
 
 
     <ImageButton
@@ -17,7 +25,7 @@
         android:layout_width="93dp"
         android:layout_height="100dp"
         android:layout_gravity="center"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:src="@drawable/logoGrafico2" />
 
     <TextView
@@ -97,21 +105,23 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="30dp"
         android:textSize="20dp"
         android:textColor="@color/orange_yellow_inicio"
         android:text="Reenviar codigo de verificacion"/>
 
-    <Button
-        android:id="@+id/btn_next"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="40dp"
-        android:background="@drawable/round_button2"
-        android:textSize="40sp"
-        app:icon="@drawable/flecha_derecha"
-        app:iconTint="@color/bienvenidas_title" />
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/round_button2"
+                android:textSize="40sp"
+                app:backgroundTint="@color/bienvenidas_title"
+                app:icon="@drawable/flecha_derecha"
+                app:iconTint="@color/white" />
 
-
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

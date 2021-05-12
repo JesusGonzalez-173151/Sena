@@ -7,6 +7,14 @@
     android:layout_height="match_parent"
     android:background="@drawable/fondo_inicio">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -25,16 +33,16 @@
         android:layout_marginBottom="20dp"
         android:src="@drawable/logosena_blanco" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="45dp"
-        android:layout_gravity="center"
-        android:layout_marginBottom="10dp"
-        android:text="Crea tu cuenta"
-        android:textColor="@color/white"
-        android:textSize="30dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:text="Crea tu cuenta"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
 
-    <ImageButton
+            <ImageButton
         android:id="@+id/imageButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -154,6 +162,9 @@
         android:textColor="@color/bienvenidas_title"
         android:textSize="40sp"
         app:backgroundTint="@color/white" />
+
+        </LinearLayout>
+    </ScrollView>
 
 
 </LinearLayout>

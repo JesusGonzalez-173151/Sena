@@ -117,7 +117,7 @@
                     android:background="@drawable/round_button"
                     android:textColor="@color/orange_yellow_inicio"
                     android:text="Recuperar contrasenia"
-                    app:backgroundTint="@color/grey_motivation" />
+                     />
 
 
 
@@ -142,7 +142,7 @@
                     android:text="Registrate"
                     android:textColor="@android:color/white"
                     android:textSize="20sp"
-                    app:backgroundTint="@color/orange_yellow_inicio" />
+                     />
 
                 <Button
                     android:id="@+id/btnlogin"
@@ -155,25 +155,11 @@
                     android:text="Ingresar"
                     android:textColor="@android:color/white"
                     android:textSize="20sp"
-                    app:backgroundTint="@color/bienvenidas_title" />
+                     />
             </TableRow>
-
-
-
-
-
-
-
-
-
-
-
 
         </LinearLayout>
 
-
     </ScrollView>
-
-
 
 </LinearLayout>

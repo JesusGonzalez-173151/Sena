@@ -36,7 +36,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:fontFamily="@font/OBJECTSANS_HEAVY"
+            android:fontFamily="@font/objectsans_heavy"
             android:paddingHorizontal="5dp"
             android:text="@string/una_nueva_aventura_t"
             android:textAlignment="center"
@@ -48,7 +48,7 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="105dp"
             android:layout_marginTop="10dp"
-            android:fontFamily="@font/OBJECTSANS_REGULAR"
+            android:fontFamily="@font/objectsans_regular"
             android:text="@string/una_nueva_aventura_p"
             android:textAlignment="center"
             android:textSize="15sp" />

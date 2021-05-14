@@ -29,7 +29,7 @@
         android:layout_width="wrap_content"
         android:layout_height="34dp"
         android:layout_gravity="center"
-        android:fontFamily="@font/OBJECTSANS_HEAVY"
+        android:fontFamily="@font/objectsans_heavy"
         android:text="@string/Tu_mayor_motivacion_para_ahorrar_t"
         android:textAlignment="center"
         android:textColor="@color/bienvenidas_title"
@@ -40,7 +40,7 @@
         android:layout_height="29dp"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
-        android:fontFamily="@font/OBJECTSANS_REGULAR"
+        android:fontFamily="@font/objectsans_regular"
         android:text="@string/Tu_mayor_motivacion_para_ahorrar_q"
         android:textColor="@color/grey_cuales"
         android:textSize="15sp" />
@@ -59,7 +59,7 @@
             android:layout_marginHorizontal="5dp"
             android:background="@drawable/boton_4opciones"
             android:button="@android:color/transparent"
-            android:fontFamily="@font/OBJECTSANS_HEAVYSLANTED"
+            android:fontFamily="@font/objectsans_heavyslanted"
             android:text="Viajar"
             android:textAlignment="center"
             android:textColor="@color/white"
@@ -71,7 +71,7 @@
             android:layout_marginHorizontal="5dp"
             android:background="@drawable/boton_4opciones"
             android:button="@android:color/transparent"
-            android:fontFamily="@font/OBJECTSANS_HEAVYSLANTED"
+            android:fontFamily="@font/objectsans_heavyslanted"
             android:text="Emprender"
             android:textAlignment="center"
             android:textColor="@color/white"
@@ -95,7 +95,7 @@
             android:layout_marginHorizontal="5dp"
             android:background="@drawable/boton_4opciones"
             android:button="@android:color/transparent"
-            android:fontFamily="@font/OBJECTSANS_HEAVYSLANTED"
+            android:fontFamily="@font/objectsans_heavyslanted"
             android:text="Otro"
             android:textAlignment="center"
             android:textColor="@color/white"
@@ -107,7 +107,7 @@
             android:layout_marginHorizontal="5dp"
             android:background="@drawable/boton_4opciones"
             android:button="@android:color/transparent"
-            android:fontFamily="@font/OBJECTSANS_HEAVYSLANTED"
+            android:fontFamily="@font/objectsans_heavyslanted"
             android:text="Ropa"
             android:textAlignment="center"
             android:textColor="@color/white"
@@ -124,7 +124,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/OBJECTSANS_REGULAR"
+            android:fontFamily="@font/objectsans_regular"
             android:text="@string/Tu_mayor_motivacion_para_ahorrar_p"
             android:textAlignment="center"
             android:textColor="@color/grey_cuales"
@@ -138,11 +138,11 @@
             android:layout_marginTop="20dp"
 
             android:background="@drawable/boton_2"
-            android:fontFamily="@font/OBJECTSANS_HEAVY"
+            android:fontFamily="@font/objectsans_heavy"
             android:text="@string/btn_text_ahorremos"
             android:textColor="@android:color/white"
             android:textSize="21sp"
-            app:backgroundTint="@color/orange_yellow_inicio" />
+             />
 
     </LinearLayout>
         </LinearLayout>

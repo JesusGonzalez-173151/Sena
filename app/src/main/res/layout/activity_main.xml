@@ -16,11 +16,7 @@
         android:scaleType="center"
         android:src="@drawable/logosena_blanco" />
 
-    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/viewPager"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-         />
+
 
     /*
     https://www.youtube.com/watch?v=SHFM3Qw43LE

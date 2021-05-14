@@ -176,7 +176,7 @@
                 android:text=">"
                 android:textColor="@color/bienvenidas_title"
                 android:textSize="40sp"
-                app:backgroundTint="@color/grey_motivation" />
+                />
 
 
 

@@ -15,6 +15,8 @@
     <string name="RecuperarPass">Recuperar Contraseña</string>
     <string name="telefono">XXX-XXX-XX-XX</string>
     <string name="btn_text_otro">Otro</string>
+    <string name="correo">Correo Electronico</string>
+    <string name="numero">Numero Telefonico</string>
     <string name="btn_text_Ropa">Ropa</string>
     <string name="btn_text_empecemos">¡Empecemos!</string>
     <string name="btn_text_ahorremos">¡Ahorremos!</string>

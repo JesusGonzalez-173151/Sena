@@ -9,6 +9,7 @@ import android.widget.Toast
 import com.google.firebase.FirebaseException
 import com.google.firebase.FirebaseTooManyRequestsException
 import com.google.firebase.auth.*
+import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.activity_login.*
@@ -126,7 +127,7 @@ class LoginActivity : AppCompatActivity() {
                     //Log.d(TAG, "signInWithCredential:success")
 
                     val user = task.result?.user
-                    val intent = Intent(applicationContext, perfil::class.java)
+                    val intent = Intent(this, perfil::class.java)
                     startActivity(intent)
                 } else {
                     if (task.exception is FirebaseAuthInvalidCredentialsException) {

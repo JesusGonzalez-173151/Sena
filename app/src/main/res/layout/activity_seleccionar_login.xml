@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".SeleccionarLogin"
+    android:background="@color/orange_yellow_inicio"
+    >
+
+    <Button
+        android:id="@+id/btn_correo"
+        android:layout_width="144dp"
+        android:layout_height="102dp"
+        android:background="@drawable/boton_2"
+        android:hint="@string/correo"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.256"
+        tools:layout_editor_absoluteX="29dp" />
+
+    <Button
+        android:id="@+id/btn_telefono"
+        android:layout_width="147dp"
+        android:layout_height="83dp"
+        android:background="@drawable/boton_1"
+        android:hint="@string/numero"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.589"
+        app:layout_constraintStart_toEndOf="@+id/btn_correo"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.256" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selecciona tu metodo de Login"
+        android:textSize="25sp"
+        android:textColor="@color/grey_motivation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.301" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

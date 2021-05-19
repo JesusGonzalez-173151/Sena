@@ -9,10 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FinanzasPersonales">
-        <activity android:name=".perfil"></activity>
+        <activity android:name=".EmailLogin"></activity>
+        <activity android:name=".SeleccionarLogin" />
+        <activity android:name=".perfil" />
         <activity android:name=".motivacion2" />
         <activity android:name=".RecuperaPassword" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

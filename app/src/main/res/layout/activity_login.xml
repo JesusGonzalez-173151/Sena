@@ -139,7 +139,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="15dp"
                     android:background="@drawable/boton_1"
-                    android:text="Registrate"
+                    android:text="Registrarse"
                     android:textColor="@android:color/white"
                     android:textSize="20sp"
                      />

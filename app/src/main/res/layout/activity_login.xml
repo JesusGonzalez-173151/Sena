@@ -260,7 +260,7 @@
                     android:background="@drawable/boton_2"
                     android:text="Registrate"
                     android:textColor="@android:color/white"
-                    android:textSize="20sp"
+                     android:textSize="20sp"
                      />
 
                 <Button

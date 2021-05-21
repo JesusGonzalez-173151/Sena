@@ -20,7 +20,9 @@ class EmailLogin : AppCompatActivity() {
         btn_ingresar.setOnClickListener {
             valida_ingreso()
         }
+
     }
+
 
     private fun valida_ingreso() {
 

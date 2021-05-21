@@ -9,9 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Sena">
-        <activity android:name=".EmailLogin"></activity>
-        <activity android:name=".SeleccionarLogin" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".TarjetaRegistro"></activity>
+        <activity android:name=".MotivoActivity" />
+        <activity android:name=".CrearCuenta" />
+        <activity android:name=".Egresos" />
+        <activity android:name=".Ingresos" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".EmailLogin" />
+        <activity android:name=".SeleccionarLogin">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

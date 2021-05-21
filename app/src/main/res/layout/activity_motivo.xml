@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange_yellow_inicio"
+    tools:context=".MotivoActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/boton_back" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"/>
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/objectsans_slanted"
+                android:text="@string/Tu_mayor_motivacion_para_ahorrar_t"
+                android:textAlignment="center"
+                android:textColor="@color/bienvenidas_title"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="29dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/objectsans_regular"
+                android:text="@string/Tu_mayor_motivacion_para_ahorrar_q"
+                android:textColor="@color/grey_cuales"
+                android:textSize="15sp" />
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:paddingHorizontal="10dp"
+                android:layout_gravity="center"
+                android:id="@+id/row1"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/viajar"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:background="@drawable/boton_4opciones"
+                    android:button="@android:color/transparent"
+                    android:fontFamily="@font/objectsans_heavyslanted"
+                    android:text="Viajar"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="17sp" />
+
+                <RadioButton
+                    android:id="@+id/emprender"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:background="@drawable/boton_4opciones"
+                    android:button="@android:color/transparent"
+                    android:fontFamily="@font/objectsans_heavyslanted"
+                    android:text="Emprender"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="17sp" />
+
+            </RadioGroup>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:paddingHorizontal="10dp"
+                android:layout_gravity="center"
+                android:id="@+id/row2"
+                android:orientation="horizontal">
+
+
+                <RadioButton
+                    android:id="@+id/otro"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:background="@drawable/boton_4opciones"
+                    android:button="@android:color/transparent"
+                    android:fontFamily="@font/objectsans_heavyslanted"
+                    android:text="Otro"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="17sp" />
+
+                <RadioButton
+                    android:id="@+id/ropa"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:background="@drawable/boton_4opciones"
+                    android:button="@android:color/transparent"
+                    android:fontFamily="@font/objectsans_heavyslanted"
+                    android:text="Ropa"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="17sp" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/objectsans_regular"
+                    android:text="@string/Tu_mayor_motivacion_para_ahorrar_p"
+                    android:textAlignment="center"
+                    android:textColor="@color/grey_cuales"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/btn_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/boton_2"
+                    android:fontFamily="@font/objectsans_heavy"
+                    android:text="@string/btn_text_ahorremos"
+                    android:textColor="@android:color/white"
+                    android:textSize="21sp"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

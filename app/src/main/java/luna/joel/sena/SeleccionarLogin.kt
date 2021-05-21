@@ -10,8 +10,6 @@ class SeleccionarLogin : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_seleccionar_login)
 
-        
-
         btn_correo.setOnClickListener{
             val intent: Intent= Intent(this, EmailLogin::class.java)
             startActivity(intent)

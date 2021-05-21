@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/orange_yellow_inicio"
+    tools:context=".CrearCuenta">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/boton_back"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"/>
+
+
+            <ImageView
+                android:layout_width="93dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/logosena_blanco" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:text="Crea tu cuenta"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:src="@drawable/orange_user"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:background="@drawable/round_button"
+                 />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_marginLeft="20dp"
+                android:text="Nombre Completo"
+                android:textColor="@color/white"
+                android:textSize="25dp" />
+
+            <EditText
+                android:id="@+id/editPersonName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="@color/background_color"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="20dp"
+                android:inputType="textPersonName"
+                android:background="@drawable/round_button"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Correo Electronico"
+                android:textSize="25dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/white"
+                />
+
+
+                <EditText
+                    android:id="@+id/et_correo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/round_button"
+                    android:ems="10"
+                    android:textColor="@color/background_color"
+                    android:textAlignment="center"
+                    android:inputType="textEmailAddress"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contrasenia"
+                android:textSize="25dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/white"
+                />
+
+            <EditText
+                android:id="@+id/et_contra1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="@color/background_color"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="20dp"
+                android:inputType="textPassword"
+                android:background="@drawable/round_button"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Confirmar Contrasenia"
+                android:textSize="25dp"
+                android:layout_marginLeft="20dp"
+
+                android:textColor="@color/white"
+                />
+
+            <EditText
+                android:id="@+id/et_contra2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="@color/background_color"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="20dp"
+                android:inputType="textPassword"
+                android:background="@drawable/round_button"/>
+
+            <Button
+                android:id="@+id/btn_registrar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/round_button"
+                android:text=">"
+                android:textColor="@color/bienvenidas_title"
+                android:textSize="40sp"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

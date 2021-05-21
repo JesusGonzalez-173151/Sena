@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="4dp"
+    android:layout_height="120dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingVertical="20dp"
+        android:orientation="vertical"
+        android:background="@drawable/round_button2">
+
+        <TextView
+            android:id="@+id/metaNombre"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            >
+
+        </TextView>
+
+        <ImageButton
+            android:id="@+id/imagelogro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/white_growth"
+            android:background="@color/orange_yellow_inicio"
+            />
+
+    </LinearLayout>
+</LinearLayout>

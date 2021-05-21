@@ -4,107 +4,158 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/grey_motivation">
+    android:background="@color/white">
 
-    <ImageButton
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/user_minibutton"
-        android:background="@color/white"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="20dp"
-        />
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_perfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/user_minibutton"
+            android:background="@color/white"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¡Hola, Ana!"
+            android:fontFamily="@font/OBJECTSANS_HEAVY"
+            android:textSize="20sp"
+            android:textColor="@color/bienvenidas_title"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="25dp"/>
+
+        <ImageButton
+            android:id="@+id/btn_personalizar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/personalizar"
+            android:background="@color/white"
+            android:layout_marginStart="170dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            />
+        <ImageButton
+            android:id="@+id/btn_config"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/configura"
+            android:background="@color/white"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"
+            />
+
+    </LinearLayout>
+
+
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-
-
-
-
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginHorizontal="10dp"
         android:orientation="vertical">
 
 
         <TextView
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="15dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Palabra del día"
-            android:textColor="@color/yellow_inicio"
+            android:textColor="@color/orange_relleno"
+            android:fontFamily="@font/OBJECTSANS_HEAVY"
             android:textSize="15sp"
             android:layout_marginLeft="40sp"
             />
 
         <SearchView
+            android:id="@+id/btn_buscador"
             android:layout_gravity="center"
-            android:layout_width="350dp"
+            android:layout_width="370dp"
             android:layout_height="50dp"
             android:background="@drawable/round_button3"
             android:backgroundTint="@color/orange_barra"
             android:layoutDirection="rtl"
             android:searchIcon="@drawable/lupa_blanca"
+            android:layout_marginTop="15dp"
             />
         <RadioGroup
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingHorizontal="10dp"
             android:layout_gravity="center"
-            android:id="@+id/row"
-            android:orientation="horizontal">
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="45dp"
+            >
 
-            <RadioButton
-                android:layout_width="155dp"
-                android:layout_height="150dp"
-                android:layout_marginHorizontal="5dp"
-                android:background="@drawable/boton_redondo"
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/progreso_ahorro"
+                android:layout_width="131dp"
+                android:layout_height="131dp"
+                android:background="@drawable/ahorros"
                 android:button="@android:color/transparent"
-                android:fontFamily="@font/objectsans_slanted"
-                android:textAlignment="center"
-                android:textColor="@color/white"
-                android:textColorHint="@color/grey_motivation"
-                android:textSize="17sp" />
+                android:fontFamily="@font/OBJECTSANS_SLANTED"
+                android:textColor="@color/black"
+                android:text="0%"
+                android:textSize="17sp"
+                />
 
 
-            <RadioButton
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_marginHorizontal="5dp"
-                android:background="@drawable/boton_redondo"
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/progreso_gasto"
+                android:layout_width="131dp"
+                android:layout_height="131dp"
+                android:layout_marginLeft="80dp"
+                android:background="@drawable/gastos"
                 android:button="@android:color/transparent"
-                android:fontFamily="@font/objectsans_slanted"
+                android:fontFamily="@font/OBJECTSANS_SLANTED"
                 android:textAlignment="center"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
+                android:text="0%"
                 android:textSize="17sp" />
 
         </RadioGroup>
 
 
         <TableRow
-            android:layout_width="295dp"
+            android:id="@+id/row2"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center">
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="45dp"
+            android:layout_marginTop="20dp"
+            >
+
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="131dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="40dp"
+                android:fontFamily="@font/OBJECTSANS_HEAVY"
                 android:text="Ahorros"
-                android:textColor="@color/orange_yellow_inicio"
-                android:textSize="20dp" />
-
+                android:textColor="@color/orange_relleno"
+                android:textSize="15sp"
+                android:textAlignment="center"/>
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="131dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="80dp"
                 android:text="Gastos"
                 android:textColor="@color/bienvenidas_title"
-                android:textSize="20dp" />
+                android:textSize="15sp"
+                android:fontFamily="@font/OBJECTSANS_HEAVY"
+                android:textAlignment="center"
+                android:layout_marginLeft="80dp"/>
 
         </TableRow>
 
@@ -113,23 +164,90 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Mis Metas"
-            android:textColor="@color/orange_yellow_inicio"
+            android:textColor="@color/orange_relleno"
             android:textSize="20dp"
-            android:layout_marginLeft="40dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/OBJECTSANS_HEAVY"
             />
+
+
         <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="70dp"
-            android:paddingHorizontal="10dp"
-            android:layout_gravity="center"
-            android:id="@+id/row1"
-            android:orientation="horizontal">
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="left"
+            android:id="@+id/row3"
+            android:orientation="horizontal"
+            android:layout_marginLeft="30dp">
+
+            <RadioButton
+                android:id="@+id/btn_meta1"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/casita"
+
+                android:layout_marginHorizontal="5dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:button="@android:color/transparent"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+
+            <RadioButton
+                android:id="@+id/btn_meta2"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/add"
+
+                android:layout_marginHorizontal="5dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:button="@android:color/transparent"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+            <RadioButton
+                android:id="@+id/btn_meta3"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+
+                android:background="@drawable/add"
+                android:layout_marginHorizontal="5dp"
+                android:textAlignment="center"
+                android:button="@android:color/transparent"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+            <RadioButton
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+
+                android:background="@drawable/add"
+                android:layout_marginHorizontal="5dp"
+                android:textAlignment="center"
+                android:button="@android:color/transparent"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+            <RadioButton
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+
+                android:background="@drawable/add"
+                android:layout_marginHorizontal="5dp"
+                android:textAlignment="center"
+                android:button="@android:color/transparent"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
 
             <RadioButton
                 android:layout_width="70dp"
                 android:layout_height="70dp"
-                android:background="@drawable/round_button2"
-                android:text="+"
+                android:background="@drawable/add"
+
                 android:layout_marginHorizontal="5dp"
                 android:textAlignment="center"
                 android:textColor="@color/black"
@@ -140,36 +258,15 @@
             <RadioButton
                 android:layout_width="70dp"
                 android:layout_height="70dp"
-                android:text="+"
-                android:background="@drawable/round_button2"
+                android:background="@drawable/add"
                 android:layout_marginHorizontal="5dp"
                 android:textAlignment="center"
+                android:textColor="@color/black"
                 android:button="@android:color/transparent"
                 android:textSize="20dp"
                 android:textStyle="bold"
                 />
-            <RadioButton
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:text="+"
-                android:background="@drawable/round_button2"
-                android:layout_marginHorizontal="5dp"
-                android:textAlignment="center"
-                android:button="@android:color/transparent"
-                android:textSize="20dp"
-                android:textStyle="bold"
-                />
-            <RadioButton
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:text="+"
-                android:background="@drawable/round_button2"
-                android:layout_marginHorizontal="5dp"
-                android:textAlignment="center"
-                android:button="@android:color/transparent"
-                android:textSize="20dp"
-                android:textStyle="bold"
-                />
+
         </RadioGroup>
 
 
@@ -179,80 +276,95 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-
             <ImageView
+                android:id="@+id/imgv_user"
                 android:layout_width="wrap_content"
-                android:layout_height="88dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                tools:srcCompat="@tools:sample/avatars" />
-
-
+                android:src="@drawable/user_button"
+                 />
 
             <TextView
-                android:textSize="25dp"
+                android:id="@+id/tv_lvl"
+                android:textSize="15sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Alcancia - LVL - 0"
                 android:textAlignment="center"
-                android:layout_gravity="center"/>
-
+                android:layout_gravity="center"
+                android:fontFamily="@font/OBJECTSANS_REGULAR"
+                />
 
             <TextView
-                android:textSize="20dp"
+                android:textSize="15sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Que paso con el dinero?"
+                android:text="¿Qué pasó con tu dinero?"
                 android:textAlignment="center"
                 android:layout_gravity="center"
-                android:textColor="@color/orange_yellow_inicio"/>
+                android:textColor="@color/orange_relleno"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/OBJECTSANS_REGULAR"/>
 
             <TextView
-                android:textSize="20dp"
+                android:textSize="14sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="¿Cuentanos y sube de nivel?"
+                android:text="¡Cuéntanos y sube de nivel!"
                 android:textAlignment="center"
-                android:layout_gravity="center"/>
+                android:layout_gravity="center"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/gray_otro"/>
 
 
             <TableRow
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:layout_marginTop="15dp"
                 >
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/btnIngresar"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="40dp"
                     android:layout_gravity="center"
                     android:layout_marginRight="15dp"
-                    android:background="@drawable/round_button"
-                    android:text="Ingresar"
+                    android:background="@drawable/ingresar"
+                    android:text="      Ingresar"
                     android:textColor="@android:color/white"
-                    android:textSize="20sp"
+                    android:textSize="15sp"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/OBJECTSANS_REGULAR"
                      />
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/btnEgresar"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="129dp"
+                    android:layout_height="40dp"
                     android:layout_gravity="center"
                     android:layout_marginLeft="15dp"
-                    android:background="@drawable/round_button"
-                    android:text="Egresar"
+                    android:background="@drawable/egresar"
+                    android:text="        Egresar"
                     android:textColor="@android:color/white"
-                    android:textSize="20sp"
+                    android:textSize="15sp"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/OBJECTSANS_REGULAR"
                     />
             </TableRow>
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_sena_pro"
+                android:layout_width="201dp"
+                android:layout_height="40dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/round_button3"
-                android:text="Sera Pro"
+                android:layout_marginTop="20sp"
+                android:background="@drawable/sena_pro"
+                android:text="Sena PRO"
+                android:fontFamily="@font/OBJECTSANS_HEAVY"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:textAlignment="center"
                  />
         </LinearLayout>
 

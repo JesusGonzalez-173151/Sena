@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "505318103528",
+    "firebase_url": "https://sena-2f86b-default-rtdb.firebaseio.com",
     "project_id": "sena-2f86b",
     "storage_bucket": "sena-2f86b.appspot.com"
   },
@@ -13,6 +14,43 @@
         }
       },
       "oauth_client": [
+        {
+          "client_id": "505318103528-q4etkp5r6v2lqrcf2pa65n5g92bhaao7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEJHs1M4WYz_IXcK1h0OXmKRFPlNahZ8I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "505318103528-q4etkp5r6v2lqrcf2pa65n5g92bhaao7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:505318103528:android:491e5a5dfccf1dc3ed2c5d",
+        "android_client_info": {
+          "package_name": "luna.joel.sena"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "505318103528-bhj2gf2r3613g6b8fdrmq3ofreh49cge.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "luna.joel.sena",
+            "certificate_hash": "43d56e283d478081fa8933c1f92e390426860165"
+          }
+        },
         {
           "client_id": "505318103528-q4etkp5r6v2lqrcf2pa65n5g92bhaao7.apps.googleusercontent.com",
           "client_type": 3

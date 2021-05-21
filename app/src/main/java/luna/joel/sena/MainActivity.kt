@@ -1,11 +1,13 @@
-package com.gonzalez.jesus.finanzaspersonales
+package luna.joel.sena
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class perfil : AppCompatActivity() {
+class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_perfil)
+        setContentView(R.layout.activity_main)
+
+
     }
 }

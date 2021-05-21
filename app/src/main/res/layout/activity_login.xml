@@ -52,7 +52,7 @@
                     android:textAlignment="center"
                     android:textColor="@color/background_color"
                     android:textSize="17sp"
-                    android:fontFamily="@font/OBJECTSANS_REGULAR"
+                    android:fontFamily="@font/objectsans_regular"
                     />
 
                 <TextView
@@ -62,7 +62,7 @@
                     android:layout_marginTop="15dp"
                     android:textSize="15sp"
                     android:text="Código enviado a +52 *** *** XX XX"
-                    android:fontFamily="@font/OBJECTSANS_REGULAR"
+                    android:fontFamily="@font/objectsans_regular"
                     />
 
                 <TextView
@@ -72,7 +72,7 @@
                     android:layout_marginTop="15dp"
                     android:textSize="15dp"
                     android:text="Este código expirará en 03:17"
-                    android:fontFamily="@font/OBJECTSANS_REGULAR"
+                    android:fontFamily="@font/objectsans_regular"
                     />
 
                 <TableRow
@@ -120,7 +120,7 @@
                     android:layout_marginTop="50dp"
                     android:textSize="15sp"
                     android:textColor="@color/bienvenidas_title"
-                    android:fontFamily="@font/OBJECTSANS_REGULAR"
+                    android:fontFamily="@font/objectsans_regular"
                     android:text="Reenviar código de verificación"/>
 
                 <androidx.appcompat.widget.AppCompatButton
@@ -166,7 +166,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
                     android:text="Iniciar sesión"
-                    android:fontFamily="@font/OBJECTSANS_REGULAR"
+                    android:fontFamily="@font/objectsans_regular"
                     android:textSize="25sp"
                     android:layout_gravity="center"
                     />
@@ -178,7 +178,7 @@
                     android:textSize="15sp"
                     android:layout_marginLeft="10dp"
                     android:textColor="@color/orange_relleno"
-                    android:fontFamily="@font/OBJECTSANS_REGULAR"
+                    android:fontFamily="@font/objectsans_regular"
                 />
 
             <TableRow
@@ -226,7 +226,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
                 android:ems="10"
-                android:textColor="@color/background_color"
+                android:textColor="@color/black"
                 android:hint="   **************"
                 android:inputType="textPassword"
                 android:background="@drawable/round_button3"/>
@@ -244,7 +244,7 @@
                     android:layout_height="match_parent"
                     android:text="Recuérdame"
                     android:textSize="12sp"
-                    android:fontFamily="@font/OBJECTSANS_SLANTED"
+                    android:fontFamily="@font/objectsans_slanted"
                     android:textColor="@color/background_color"
                     android:layout_marginLeft="10dp"/>
 
@@ -273,7 +273,7 @@
                     android:background="@drawable/boton_0"
                     android:textColor="@android:color/white"
                     android:text="Regístrate"
-                    android:fontFamily="@font/OBJECTSANS_HEAVY"
+                    android:fontFamily="@font/objectsans_heavy"
                     android:textSize="14sp"
                     android:textAllCaps="false"
                      />
@@ -281,11 +281,11 @@
                     android:id="@+id/btn_ingresar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="25dp"
+                    android:layout_marginLeft="30dp"
                     android:background="@drawable/boton_1"
                     android:textColor="@android:color/white"
                     android:text="Ingresar"
-                    android:fontFamily="@font/OBJECTSANS_HEAVY"
+                    android:fontFamily="@font/objectsans_heavy"
                     android:textSize="14sp"
                     android:textAllCaps="false"
                     />

@@ -6,36 +6,37 @@
     android:layout_height="match_parent"
     android:background="@color/grey_motivation">
 
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/user_minibutton"
+        android:background="@color/white"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        />
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
+
+
+
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="30dp"
-                android:layout_height="20dp"
-                android:layout_marginLeft="15dp"
-                app:srcCompat="@drawable/cara_lente" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="30dp"
-            android:layout_gravity="center_vertical"
-            android:layout_marginLeft="80dp"
-            android:text="¡Hola,Ana!"
-            android:textColor="@color/bienvenidas_title"
-            android:textSize="30dp" />
         <TextView
             android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Palabra del dia"
+            android:text="Palabra del día"
             android:textColor="@color/yellow_inicio"
-            android:textSize="20dp"
+            android:textSize="15sp"
             android:layout_marginLeft="40sp"
             />
 
@@ -43,7 +44,11 @@
             android:layout_gravity="center"
             android:layout_width="350dp"
             android:layout_height="50dp"
-            android:background="@drawable/round_button3"/>
+            android:background="@drawable/round_button3"
+            android:backgroundTint="@color/orange_barra"
+            android:layoutDirection="rtl"
+            android:searchIcon="@drawable/lupa_blanca"
+            />
         <RadioGroup
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

@@ -5,7 +5,7 @@
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
+    <color name="gray_verify">#DFDFDF</color>
 
     <color name="colorPrimary">#00ACAC</color>
     <color name="colorPrimaryDark">#018787</color>
@@ -21,5 +21,6 @@
     <color name="background_color">#9B9594</color>
     <color name="bienvenidas_title">#E4571F</color>
     <color name="grey_cuales">#707070</color>
+    <color name="orange_relleno">#EB9317</color>
 
 </resources>

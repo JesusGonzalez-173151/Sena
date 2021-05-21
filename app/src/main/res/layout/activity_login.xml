@@ -7,7 +7,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:visibility="gone"
+
         android:id="@+id/registerlayout"
         >
         <ScrollView
@@ -22,11 +22,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/boton_back"
+                    android:background="@color/white"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
                     />
 
                 <ImageView
-                    android:layout_width="93dp"
-                    android:layout_height="100dp"
+                    android:layout_width="74.32dp"
+                    android:layout_height="74.32dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="30dp"
                     android:src="@drawable/logosena_naranja" />
@@ -34,19 +37,22 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
                     android:layout_gravity="center"
                     android:text="Verifcacion"
                     android:textColor="@color/bienvenidas_title"
-                    android:textSize="30dp" />
+                    android:textSize="25sp" />
 
                 <TextView
-                    android:layout_marginTop="20dp"
-                    android:layout_width="250dp"
+                    android:layout_width="258dp"
                     android:layout_height="wrap_content"
-                    android:text="Por favor de ingresa el codigo de verificacion enviado a tu numero telefonico"
                     android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:text="Por favor, de ingresa el código de verificación enviado a tu número telefónico"
+                    android:textAlignment="center"
                     android:textColor="@color/background_color"
-                    android:textSize="15dp"
+                    android:textSize="17sp"
+                    android:fontFamily="@font/OBJECTSANS_REGULAR"
                     />
 
                 <TextView
@@ -54,16 +60,20 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="15dp"
-                    android:textSize="20dp"
-                    android:text="Codigo Enviado a +52 *** *** XX XX"/>
+                    android:textSize="15sp"
+                    android:text="Código enviado a +52 *** *** XX XX"
+                    android:fontFamily="@font/OBJECTSANS_REGULAR"
+                    />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="15dp"
-                    android:textSize="20dp"
-                    android:text="Este codigo expirara en 03:17"/>
+                    android:textSize="15dp"
+                    android:text="Este código expirará en 03:17"
+                    android:fontFamily="@font/OBJECTSANS_REGULAR"
+                    />
 
                 <TableRow
                     android:layout_width="wrap_content"
@@ -107,19 +117,20 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginTop="30dp"
-                    android:textSize="20dp"
-                    android:textColor="@color/orange_yellow_inicio"
-                    android:text="Reenviar codigo de verificacion"/>
+                    android:layout_marginTop="50dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/bienvenidas_title"
+                    android:fontFamily="@font/OBJECTSANS_REGULAR"
+                    android:text="Reenviar código de verificación"/>
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/btn_next"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="59dp"
+                    android:layout_height="59dp"
                     android:layout_gravity="center"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="60dp"
                     android:background="@drawable/boton_next"
-                    android:textSize="40sp"
+                    android:textColor="@color/white"
                     />
             </LinearLayout>
         </ScrollView>
@@ -130,6 +141,7 @@
         android:layout_height="match_parent"
         android:id="@+id/layoutLogin"
         android:visibility="visible"
+        android:paddingHorizontal="30dp"
         >
         <ScrollView
             android:layout_width="match_parent"
@@ -142,8 +154,8 @@
 
                 <ImageView
                     android:contentDescription="@string/app_name"
-                    android:layout_width="93dp"
-                    android:layout_height="100dp"
+                    android:layout_width="74.32dp"
+                    android:layout_height="74.32dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="120dp"
                     android:src="@drawable/logosena_naranja" />
@@ -152,40 +164,41 @@
                     android:textColor="@color/bienvenidas_title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Iniciar Sesion"
-                    android:textSize="30sp"
+                    android:layout_marginTop="20dp"
+                    android:text="Iniciar sesión"
+                    android:fontFamily="@font/OBJECTSANS_REGULAR"
+                    android:textSize="25sp"
                     android:layout_gravity="center"
                     />
                 <TextView
                     android:layout_marginTop="40dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Numero de telefono"
-                    android:textSize="25sp"
-                    android:layout_marginLeft="20dp"
-                    android:textColor="@color/orange_yellow_inicio"
+                    android:text="Número de teléfono"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/orange_relleno"
+                    android:fontFamily="@font/OBJECTSANS_REGULAR"
                 />
 
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="42dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="10dp">
                 <EditText
                     android:id="@+id/TextPhone"
-                    android:layout_width="100dp"
-                    android:layout_height="30dp"
-                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
                     android:background="@drawable/round_button3"
-                    android:ems="10"
                     android:textColor="@color/background_color"
-                    android:text="MX +52"
+                    android:text="       MX +52     "
                     android:textAlignment="center"
-                    android:inputType="phone" />
+                    android:inputType="phone"/>
                 <EditText
                     android:id="@+id/Phone"
-                    android:layout_width="wrap_content"
-                    android:layout_height="30dp"
-                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="15dp"
                     android:background="@drawable/round_button3"
                     android:ems="10"
                     android:textColor="@color/background_color"
@@ -200,29 +213,27 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Contrasenia"
-                android:textSize="25dp"
-                android:layout_marginLeft="20dp"
-                android:textColor="@color/orange_yellow_inicio"
-                android:layout_marginTop="5dp"
+                android:text="Contraseña"
+                android:textSize="15sp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/orange_relleno"
+                android:layout_marginTop="15dp"
                 />
 
             <EditText
                 android:layout_marginTop="10dp"
                 android:id="@+id/editTextTextPassword"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
+                android:layout_height="35dp"
                 android:ems="10"
                 android:textColor="@color/background_color"
-                android:layout_marginRight="15dp"
-                android:layout_marginLeft="20dp"
+                android:hint="   **************"
                 android:inputType="textPassword"
-
                 android:background="@drawable/round_button3"/>
 
 
             <TableRow
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="42dp"
                 android:layout_marginTop="10dp"
                 android:layout_gravity="center">
@@ -230,51 +241,55 @@
                 <RadioButton
                     android:id="@+id/radioButton"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Recuerdame"
-                    android:textColor="@color/background_color"/>
+                    android:layout_height="match_parent"
+                    android:text="Recuérdame"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/OBJECTSANS_SLANTED"
+                    android:textColor="@color/background_color"
+                    android:layout_marginLeft="10dp"/>
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/btnRecuperarPass"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-
-                    android:layout_marginLeft="30dp"
-                    android:textColor="@color/orange_yellow_inicio"
+                    android:layout_marginLeft="65dp"
+                    android:textColor="@color/bienvenidas_title"
                     android:text="@string/RecuperarPass"
+                    android:textAllCaps="false"
+                    android:background="@color/white"
                      />
 
             </TableRow>
             <TableRow
-                android:layout_width="wrap_content"
-                android:layout_height="100dp"
-                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
                 android:layout_gravity="center"
                 >
-                <Button
-                    android:id="@+id/btnregistrarse"
-                    android:layout_width="189dp"
-                    android:layout_height="70dp"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="15dp"
-                    android:background="@drawable/boton_2"
-                    android:text="Registrate"
-                    android:textColor="@android:color/white"
-                     android:textSize="20sp"
-                     />
-
-                <Button
-                    android:id="@+id/btnlogin"
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_registrarse"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="60dp"
-                    android:layout_marginTop="15dp"
-                    android:background="@drawable/boton_1"
-                    android:text="Ingresar"
+                    android:background="@drawable/boton_0"
                     android:textColor="@android:color/white"
-                    android:textSize="20sp"
+                    android:text="Regístrate"
+                    android:fontFamily="@font/OBJECTSANS_HEAVY"
+                    android:textSize="14sp"
+                    android:textAllCaps="false"
                      />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_ingresar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:background="@drawable/boton_1"
+                    android:textColor="@android:color/white"
+                    android:text="Ingresar"
+                    android:fontFamily="@font/OBJECTSANS_HEAVY"
+                    android:textSize="14sp"
+                    android:textAllCaps="false"
+                    />
+
                 </TableRow>
             </LinearLayout>
         </ScrollView>

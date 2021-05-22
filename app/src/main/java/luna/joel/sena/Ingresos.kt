@@ -19,7 +19,7 @@ class Ingresos : AppCompatActivity() {
         //Instanciar Firebase
         //Conexion BD
         storage = FirebaseFirestore.getInstance()
-        //Conexion al ususarioGmail
+        //Conexion al usuarioGmail
         usuario = FirebaseAuth.getInstance()
 
 
@@ -38,10 +38,10 @@ class Ingresos : AppCompatActivity() {
             "cantidad" to cantidad,
             "nota" to nota,
             "tipo" to tipoingreso,
-            "email" to usuario)
+            "email" to usuario.currentUser?.email)
 
 
-        storage.collection("ingreso").add(ingresos).addOnSuccessListener {
+        storage.collection("ingresos").add(ingresos).addOnSuccessListener {
             Toast.makeText(this,"Ingreso agregado", Toast.LENGTH_SHORT).show()
         }.addOnFailureListener {
             Toast.makeText(this,"Error: Intente de Nuevo", Toast.LENGTH_SHORT).show()

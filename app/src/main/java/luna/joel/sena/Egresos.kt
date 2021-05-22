@@ -39,7 +39,7 @@ class Egresos : AppCompatActivity() {
             "cantidad" to cantidad,
             "nota" to nota,
             "tipo" to tipoingreso,
-            "email" to usuario)
+            "email" to usuario.currentUser?.email)
 
 
         storage.collection("ingreso").add(ingresos).addOnSuccessListener {

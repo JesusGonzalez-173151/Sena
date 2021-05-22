@@ -13,11 +13,21 @@
         <activity android:name=".SeleccionarLogin" />
         <activity android:name=".perfil" />
         <activity android:name=".motivacion2" />
+        <activity android:name=".LoginActivity" />
         <activity android:name=".RecuperaPassword" />
-        <activity android:name=".LoginActivity">
+        <activity android:name=".Motivacion" />
+        <activity android:name=".MiembroPro" />
+        <activity android:name=".Configuracion" />
+        <activity android:name=".ConfiguracionPerfil" />
+        <activity android:name=".CrearCuenta" />
+        <activity android:name=".Pincipal" />
+        <activity android:name=".Recuperacion" />
+        <activity android:name=".SincronizarTarjeta" />
+
+        //inicia con esa activity usando ese intento
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

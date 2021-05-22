@@ -32,7 +32,7 @@ class LoginActivity : AppCompatActivity() {
         setContentView(R.layout.activity_login)
 
 
-        btnlogin.setOnClickListener{
+        btn_ingresar.setOnClickListener{
             iniciarSesion()
         }
 

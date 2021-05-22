@@ -1,20 +1,42 @@
 package com.gonzalez.jesus.finanzaspersonales
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
-import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.ktx.auth
-import com.google.firebase.ktx.Firebase
+import android.os.Handler
+import androidx.appcompat.app.AppCompatActivity
+
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var auth: FirebaseAuth
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        auth = Firebase.auth
-        auth.setLanguageCode("fr")
+        inicio()
 
     }
+
+     fun inicio(){
+
+        val handler = Handler()
+        handler.postDelayed({ // TODO: Your application init goes here.
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
+            this.finish()
+        }, 4000)
+
+    }
+
+
+/**
+    timer = new Timer();
+    timer.schedule(new TimerTask (){
+        @Override
+        public void run() {
+            Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+            startActivity(intent);
+        }
+    }.5000);**/
 }

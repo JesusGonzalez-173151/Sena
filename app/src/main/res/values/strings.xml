@@ -2,7 +2,8 @@
     <string name="app_name">Sena</string>
 
     <string name="estas_preparado_t">¿Estás preparado?</string>
-    <string name="estas_preparado_p">¡Sena te da la bienvenida! Ella te apoyará en el camino al éxito de tu control de finanzas.</string>
+    <string name="estas_preparado_p">¡Sena te da la bienvenida!</string>
+    <string name="estas_preparado_p2">Ella te apoyará en el camino al éxito de tu control de finanzas.</string>
     <string name="sera_sencillo_facil_t">Será fácil y sencillo</string>
     <string name="sera_sencillo_facil_p">Sena mejora la forma en la que capturas tus ingresos y egresos, haciéndolo más dinámico para ti.</string>
     <string name="una_nueva_aventura_t">Una nueva aventura</string>

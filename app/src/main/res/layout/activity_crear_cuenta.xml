@@ -157,7 +157,7 @@
                 android:paddingLeft="15dp"
                 android:hint="Ingresa tu nueva constraseña"
                 android:textColorHint="@color/gray_hint"
-                android:inputType="textVisiblePassword"
+                android:inputType="textPassword"
                 android:background="@drawable/round_button"
                 />
 
@@ -184,7 +184,7 @@
                 android:fontFamily="@font/objectsans_regular"
                 android:hint="Confirma tu nueva constraseña"
                 android:textColorHint="@color/gray_hint"
-                android:inputType="textVisiblePassword"
+                android:inputType="textPassword"
                 android:background="@drawable/round_button"
                 />
 

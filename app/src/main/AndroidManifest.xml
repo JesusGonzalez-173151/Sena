@@ -22,11 +22,11 @@
         <activity android:name=".MiembroPro" />
         <activity android:name=".Configuracion" />
         <activity android:name=".ConfiguracionPerfil" />
-        <activity android:name=".CrearCuenta" />
+        <activity android:name=".BienvenidaA" />
         <activity android:name=".Pincipal" />
         <activity android:name=".Recuperacion" />
         <activity android:name=".SincronizarTarjeta" />
-        <activity android:name=".BienvenidaA">
+        <activity android:name=".CrearCuenta">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

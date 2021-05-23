@@ -59,14 +59,14 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="45dp"
         android:layout_marginTop="30dp"
-        android:text="Nombre Completo"
+        android:text="Nombre de usuario"
         android:textColor="@color/white"
         android:textSize="15sp"
         android:fontFamily="@font/objectsans_heavy"/>
 
             <EditText
                 android:layout_marginTop="5dp"
-                android:id="@+id/editTextTextPersonName"
+                android:id="@+id/editTextUsername"
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
                 android:layout_marginHorizontal="30dp"
@@ -75,64 +75,38 @@
                 android:textSize="15sp"
                 android:paddingLeft="15dp"
                 android:fontFamily="@font/objectsans_regular"
-                android:hint="Escribe aqui tu nombre completo"
+                android:hint="Escribe aqui su nombre de usuario"
                 android:textColorHint="@color/gray_hint"
                 android:inputType="textPersonName"
                 android:background="@drawable/round_button"
                 />
 
-
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="45dp"
-                android:layout_marginTop="15dp"
-                android:text="Número de teléfono"
+                android:layout_marginTop="30dp"
+                android:text="Correo electrónico"
                 android:textColor="@color/white"
                 android:textSize="15sp"
                 android:fontFamily="@font/objectsans_heavy"/>
 
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-
-        <EditText
-            android:id="@+id/TextPhone"
-            android:layout_marginTop="5dp"
-            android:layout_width="120dp"
-            android:layout_height="35dp"
-            android:layout_marginLeft="30dp"
-            android:ems="10"
-            android:textColor="@color/black"
-            android:textSize="15sp"
-            android:textAlignment="center"
-            android:fontFamily="@font/objectsans_regular"
-            android:hint="    MX +52"
-            android:textColorHint="@color/gray_hint"
-            android:inputType="phone"
-            android:background="@drawable/round_button"
-            />
-
-
-
-        <EditText
-            android:id="@+id/Phone"
-            android:layout_width="match_parent"
-            android:layout_height="35dp"
-            android:layout_marginLeft="25dp"
-            android:layout_marginRight="30dp"
-            android:layout_marginTop="5dp"
-            android:background="@drawable/round_button"
-            android:ems="10"
-            android:textColor="@color/black"
-            android:fontFamily="@font/objectsans_regular"
-            android:textSize="15sp"
-            android:hint="@string/telefono"
-            android:textColorHint="@color/gray_hint"
-            android:textAlignment="center"
-            android:inputType="phone" />
-    </TableRow>
+            <EditText
+                android:layout_marginTop="5dp"
+                android:id="@+id/editTexCorreo"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginHorizontal="30dp"
+                android:ems="10"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:paddingLeft="15dp"
+                android:fontFamily="@font/objectsans_regular"
+                android:hint="Ingrese su correo electrónico"
+                android:textColorHint="@color/gray_hint"
+                android:inputType="textPersonName"
+                android:background="@drawable/round_button"
+                />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -194,13 +168,11 @@
                 android:layout_height="59dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="35dp"
-                android:layout_marginBottom="30dp"
+                android:layout_marginBottom="15dp"
                 android:background="@drawable/boton_next_b"
                 android:textColor="@color/white"
                 />
-
                 </LinearLayout>
-
             </ScrollView>
 
 

@@ -12,7 +12,7 @@
         <activity android:name=".BienvenidaC"></activity>
         <activity android:name=".BienvenidaB" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".CrearCuenta" />
+        <activity android:name=".EmailLogin" />
         <activity android:name=".SeleccionarLogin" />
         <activity android:name=".perfil" />
         <activity android:name=".motivacion2" />
@@ -26,7 +26,7 @@
         <activity android:name=".Pincipal" />
         <activity android:name=".Recuperacion" />
         <activity android:name=".SincronizarTarjeta" />
-        <activity android:name=".EmailLogin">
+        <activity android:name=".CrearCuenta">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

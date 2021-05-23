@@ -13,7 +13,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/boton_back"
-                android:background="#f2b644"
+                android:background="#00FFFFFF"
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="20dp"
                 />
@@ -51,7 +51,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
                 android:layout_marginTop="20dp"
-                android:background="FF"
+                android:background="#00FFFFFF"
         android:src="@drawable/user" />
 
     <TextView
@@ -73,8 +73,10 @@
                 android:ems="10"
                 android:textColor="@color/black"
                 android:textSize="15sp"
+                android:paddingLeft="15dp"
                 android:fontFamily="@font/objectsans_regular"
-                android:hint="  Escribe aqui tu nombre completo"
+                android:hint="Escribe aqui tu nombre completo"
+                android:textColorHint="@color/gray_hint"
                 android:inputType="textPersonName"
                 android:background="@drawable/round_button"
                 />
@@ -107,6 +109,7 @@
             android:textAlignment="center"
             android:fontFamily="@font/objectsans_regular"
             android:hint="    MX +52"
+            android:textColorHint="@color/gray_hint"
             android:inputType="phone"
             android:background="@drawable/round_button"
             />
@@ -126,6 +129,7 @@
             android:fontFamily="@font/objectsans_regular"
             android:textSize="15sp"
             android:hint="@string/telefono"
+            android:textColorHint="@color/gray_hint"
             android:textAlignment="center"
             android:inputType="phone" />
     </TableRow>
@@ -150,8 +154,10 @@
                 android:textColor="@color/black"
                 android:textSize="15sp"
                 android:fontFamily="@font/objectsans_regular"
-                android:hint="  Ingresa tu nueva constraseña"
-                android:inputType="textPassword"
+                android:paddingLeft="15dp"
+                android:hint="Ingresa tu nueva constraseña"
+                android:textColorHint="@color/gray_hint"
+                android:inputType="textVisiblePassword"
                 android:background="@drawable/round_button"
                 />
 
@@ -174,9 +180,11 @@
                 android:ems="10"
                 android:textColor="@color/black"
                 android:textSize="15sp"
+                android:paddingLeft="15dp"
                 android:fontFamily="@font/objectsans_regular"
-                android:hint="  Confirma tu nueva constraseña"
-                android:inputType="textPassword"
+                android:hint="Confirma tu nueva constraseña"
+                android:textColorHint="@color/gray_hint"
+                android:inputType="textVisiblePassword"
                 android:background="@drawable/round_button"
                 />
 
@@ -186,6 +194,7 @@
                 android:layout_height="59dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="35dp"
+                android:layout_marginBottom="30dp"
                 android:background="@drawable/boton_next_b"
                 android:textColor="@color/white"
                 />

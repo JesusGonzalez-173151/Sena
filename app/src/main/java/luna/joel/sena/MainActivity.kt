@@ -55,6 +55,11 @@ class MainActivity : AppCompatActivity() {
             val intent: Intent= Intent(this, Egresos::class.java)
             startActivity(intent)
         }
+
+        senna_pro.setOnClickListener {
+            val intent: Intent= Intent(this, TarjetaRegistro::class.java)
+            startActivity(intent)
+        }
     }
 
     fun fillLogros(){
@@ -69,7 +74,7 @@ class MainActivity : AppCompatActivity() {
                     }
                     logros!!.add(Logro(it.getString("meta")!!, cantidad))
                     }
-                adaptador= AdaptadorLogros(this!!, logros)
+                adaptador= AdaptadorLogros(this, logros)
                 gridview2.adapter= adaptador
                 }
     }

@@ -10,15 +10,15 @@ import kotlinx.android.synthetic.main.finansas_view.view.*
 class FinanzasAdapter: BaseAdapter {
 
     var context: Context? =null
-    var finanzas = ArrayList<Finanza>()
+    var transacciones = ArrayList<Finanza>()
 
-    constructor(context: Context, finanzas:ArrayList<Finanza>){
+    constructor(context: Context, transacciones:ArrayList<Finanza>){
         this.context = context
-        this.finanzas = finanzas
+        this.transacciones = transacciones
     }
 
     override fun getItem(p0: Int): Any {
-        return finanzas[p0]
+        return transacciones[p0]
     }
 
     override fun getItemId(p0: Int): Long{
@@ -26,17 +26,17 @@ class FinanzasAdapter: BaseAdapter {
     }
 
     override fun getCount(): Int{
-        return finanzas.size
+        return transacciones.size
     }
 
     override fun getView(p0: Int, p1: View?, p2: ViewGroup?): View {
-        var finanza = finanzas[p0]
+        var transaccion = transacciones[p0]
         var inflator = LayoutInflater.from(this.context)
         var vista = inflator.inflate(R.layout.finansas_view,null)
 
-        vista.title_ingreso.setText(finanza.tipo)
-        vista.cantida_ingreso.setText(finanza.cantidad)
-        vista.nota_ingreso.setText(finanza.nota)
+        vista.title_ingreso.setText(transaccion.tipo)
+        vista.cantida_ingreso.setText(transaccion.cantidad)
+        vista.nota_ingreso.setText(transaccion.nota)
 
 
         return vista

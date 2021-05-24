@@ -57,7 +57,7 @@
                 android:textColor="@color/white"/>
 
             <EditText
-                android:id="@+id/editTextTextPersonName"
+                android:id="@+id/editTextPersonName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -78,16 +78,15 @@
                 />
 
             <EditText
-                android:id="@+id/Phone"
+                android:id="@+id/numeroTarjeta"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:background="@drawable/round_button"
-                android:ems="10"
+                android:ems="17"
                 android:textColor="@color/background_color"
-                android:text="XXXX-XXXX-XXXX-XXX"
                 android:textAlignment="center"
-                android:inputType="phone" />
+                android:inputType="number" />
 
             <TableRow
                 android:layout_width="wrap_content"
@@ -132,14 +131,14 @@
                 />
 
             <EditText
-                android:id="@+id/TextPasswordConfirm"
+                android:id="@+id/type_tarjet"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:textColor="@color/background_color"
                 android:layout_marginRight="15dp"
                 android:layout_marginLeft="20dp"
-                android:inputType="textPassword"
+                android:inputType="text"
                 android:background="@drawable/round_button"/>
 
             <Button

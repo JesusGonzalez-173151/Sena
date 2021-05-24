@@ -13,15 +13,10 @@ class Finanzas : AppCompatActivity() {
 
 
     var adaptador: FinanzasAdapter? = null
+    var finanzas =  ArrayList<Finanza>()
 
     private lateinit var storage: FirebaseFirestore
     private lateinit var usuario: FirebaseAuth
-
-
-    companion object{
-        var finanzas =  ArrayList<Finanza>()
-        var first = true
-    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,10 +28,9 @@ class Finanzas : AppCompatActivity() {
 
         fillFinanzas()
 
-        if(!finanzas.isEmpty()){
             adaptador = FinanzasAdapter(this, finanzas)
             gridviewFinanzas.adapter = adaptador
-        }
+
     }
 
     fun fillFinanzas(){
@@ -45,8 +39,12 @@ class Finanzas : AppCompatActivity() {
             .get()
             .addOnSuccessListener {
                 it.forEach {
+                    finanzas =  ArrayList()
                     finanzas!!.add(Finanza(it.getString("tipo")!!,it.getString("cantidad")!!,it.getString("nota")!!))
+
            }
+                adaptador = FinanzasAdapter(this, finanzas)
+                gridviewFinanzas.adapter = adaptador
         }
     }
 }

@@ -56,8 +56,9 @@
                     android:layout_marginTop="10dp">
 
                     <EditText
+
                         android:layout_marginTop="10dp"
-                        android:id="@+id/editTextCorreo"
+                        android:id="@+id/et_correo"
                         android:layout_width="match_parent"
                         android:layout_height="35dp"
                         android:paddingLeft="15dp"
@@ -86,7 +87,7 @@
 
                 <EditText
                     android:layout_marginTop="10dp"
-                    android:id="@+id/editTextTextPassword"
+                    android:id="@+id/et_contra"
                     android:layout_width="match_parent"
                     android:layout_height="35dp"
                     android:ems="10"
@@ -117,7 +118,7 @@
                         />
 
                     <androidx.appcompat.widget.AppCompatButton
-                        android:id="@+id/btnRecuperarPass"
+                        android:id="@+id/btn_recuperarcontra"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_marginLeft="65dp"

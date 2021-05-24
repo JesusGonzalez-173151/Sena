@@ -3,15 +3,11 @@ package com.gonzalez.jesus.finanzaspersonales
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.Toast
 import com.google.firebase.FirebaseException
-import com.google.firebase.FirebaseTooManyRequestsException
 import com.google.firebase.auth.*
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.ktx.auth
-import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.activity_login.*
 import java.util.concurrent.TimeUnit
 
@@ -127,7 +123,7 @@ class LoginActivity : AppCompatActivity() {
                     //Log.d(TAG, "signInWithCredential:success")
 
                     val user = task.result?.user
-                    val intent = Intent(this, perfil::class.java)
+                    val intent = Intent(this, Perfil::class.java)
                     startActivity(intent)
                 } else {
                     if (task.exception is FirebaseAuthInvalidCredentialsException) {

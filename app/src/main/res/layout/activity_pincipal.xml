@@ -164,7 +164,7 @@
             android:layout_height="wrap_content"
             android:text="Mis Metas"
             android:textColor="@color/orange_relleno"
-            android:textSize="20dp"
+            android:textSize="15sp"
             android:layout_marginLeft="35dp"
             android:layout_marginTop="25dp"
             android:fontFamily="@font/objectsans_heavy"

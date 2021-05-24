@@ -17,13 +17,11 @@
         <activity android:name=".BienvenidaB" />
         <activity android:name=".Perfil" />
         <activity android:name=".EmailLogin" />
-        <activity android:name=".SeleccionarLogin" />
         <activity android:name=".CrearCuenta" />
         <activity android:name=".motivacion2" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".RecuperaPassword" />
         <activity android:name=".Motivacion" />
-        <activity android:name=".MiembroPro" />
         <activity android:name=".Configuracion" />
         <activity android:name=".ConfiguracionPerfil" />
         <activity android:name=".BienvenidaA" />

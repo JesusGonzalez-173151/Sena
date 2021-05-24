@@ -42,7 +42,7 @@ class Egresos : AppCompatActivity() {
             "email" to usuario.currentUser?.email)
 
 
-        storage.collection("ingreso").add(ingresos).addOnSuccessListener {
+        storage.collection("egresos").add(ingresos).addOnSuccessListener {
             Toast.makeText(this,"Ingreso agregado", Toast.LENGTH_SHORT).show()
         }.addOnFailureListener {
             Toast.makeText(this,"Error: Intente de Nuevo", Toast.LENGTH_SHORT).show()

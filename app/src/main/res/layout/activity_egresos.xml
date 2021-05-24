@@ -72,8 +72,7 @@
         android:layout_gravity="center"
         android:background="@drawable/round_button3"
         android:layout_marginTop="5dp"
-        android:inputType="text"
-        android:text="cantidad"
+        android:inputType="number"
         android:textAlignment="center"
         android:textColor="@color/background_color"/>
 
@@ -109,5 +108,6 @@
         android:background="@drawable/round_button2"
         android:layout_gravity="center"
         />
+
 
 </LinearLayout>

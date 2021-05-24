@@ -1,5 +1,6 @@
 package luna.joel.sena
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -25,6 +26,11 @@ class Ingresos : AppCompatActivity() {
 
         btn_ingresos.setOnClickListener{
             guardaringreso()
+        }
+
+        btn_vistaIngresos.setOnClickListener{
+            val intent: Intent = Intent(this, Finanzas::class.java)
+            startActivity(intent)
         }
     }
 

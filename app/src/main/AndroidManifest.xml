@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Sena">
-        <activity android:name=".TarjetaRegistro"></activity>
+        <activity android:name=".Finanzas"/>
+        <activity android:name=".TarjetaRegistro" />
         <activity android:name=".MotivoActivity" />
         <activity android:name=".CrearCuenta" />
         <activity android:name=".Egresos" />

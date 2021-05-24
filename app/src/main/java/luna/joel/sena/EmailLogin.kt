@@ -31,6 +31,7 @@ class EmailLogin : AppCompatActivity() {
 
         if (!correo.isNullOrBlank() && !contra.isNullOrBlank()) {
             ingresarFirebase(correo, contra)
+
         } else {
             Toast.makeText(
                 this, "Ingresar datos",

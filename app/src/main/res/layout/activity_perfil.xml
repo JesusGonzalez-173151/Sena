@@ -156,6 +156,10 @@
             </TableRow>
 
 
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                ></ScrollView>
             <RadioGroup
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
@@ -252,6 +256,9 @@
                     />
 
             </RadioGroup>
+
+
+    </ScrollView>
 
             <TableRow
                 android:layout_width="wrap_content"

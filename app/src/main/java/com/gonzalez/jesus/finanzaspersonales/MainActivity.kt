@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
      fun inicio(){
 
         val handler = Handler()
-        handler.postDelayed({ // TODO: Your application init goes here.
+        handler.postDelayed({
             val intent = Intent(this, BienvenidaA::class.java)
             startActivity(intent)
             this.finish()

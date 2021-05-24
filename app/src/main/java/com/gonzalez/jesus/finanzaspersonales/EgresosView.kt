@@ -5,8 +5,7 @@ import android.os.Bundle
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.activity_egresos_view.*
-import kotlinx.android.synthetic.main.activity_finanzas.*
-import kotlinx.android.synthetic.main.activity_finanzas.gridviewFinanzas
+
 
 class EgresosView : AppCompatActivity() {
 
@@ -28,7 +27,7 @@ class EgresosView : AppCompatActivity() {
 
         if(!egresos.isEmpty()) {
             adaptador = FinanzasAdapter(this, egresos)
-            gridviewEgresos.adapter = adaptador
+            egresos_view.adapter = adaptador
         }
     }
 
@@ -57,7 +56,7 @@ class EgresosView : AppCompatActivity() {
 
                 }
                 adaptador = FinanzasAdapter(this, egresos)
-                gridviewEgresos.adapter = adaptador
+                egresos_view.adapter = adaptador
             }
     }
 }

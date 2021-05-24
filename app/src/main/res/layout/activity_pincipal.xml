@@ -324,7 +324,7 @@
                 >
 
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/btnIngresar"
+                    android:id="@+id/btn_ingresar"
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
                     android:layout_gravity="center"
@@ -338,7 +338,7 @@
                      />
 
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/btnEgresar"
+                    android:id="@+id/btn_egresar"
                     android:layout_width="129dp"
                     android:layout_height="40dp"
                     android:layout_gravity="center"

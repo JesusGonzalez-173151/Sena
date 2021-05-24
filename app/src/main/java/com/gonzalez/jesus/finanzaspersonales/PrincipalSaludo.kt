@@ -17,7 +17,7 @@ class PrincipalSaludo : AppCompatActivity() {
 
         val handler = Handler()
         handler.postDelayed({ // TODO: Your application init goes here.
-            val intent = Intent(this, Perfil::class.java)
+            val intent = Intent(this, Pincipal::class.java)
             startActivity(intent)
             this.finish()
         }, 4000)

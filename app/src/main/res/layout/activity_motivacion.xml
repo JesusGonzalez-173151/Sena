@@ -89,6 +89,7 @@
             android:layout_height="154dp"
             android:layout_marginHorizontal="5dp"
             android:background="@drawable/boton_otro"
+            android:id="@+id/boton_otro"
             />
 
         <androidx.appcompat.widget.AppCompatButton

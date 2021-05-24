@@ -93,7 +93,7 @@
 
             <EditText
                 android:layout_marginTop="5dp"
-                android:id="@+id/editTexCorreo"
+                android:id="@+id/et_correo"
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
                 android:layout_marginHorizontal="30dp"
@@ -120,7 +120,7 @@
 
             <EditText
                 android:layout_marginTop="5dp"
-                android:id="@+id/editTextTextPassword"
+                android:id="@+id/et_contra1"
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
                 android:layout_marginHorizontal="30dp"
@@ -147,7 +147,7 @@
 
             <EditText
                 android:layout_marginTop="5dp"
-                android:id="@+id/editTextTextPasswordConfirm"
+                android:id="@+id/et_contra2"
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
                 android:layout_marginHorizontal="30dp"

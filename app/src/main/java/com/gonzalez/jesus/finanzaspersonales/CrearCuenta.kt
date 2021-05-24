@@ -1,125 +1,85 @@
 package com.gonzalez.jesus.finanzaspersonales
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import com.google.firebase.FirebaseException
 import com.google.firebase.FirebaseTooManyRequestsException
 import com.google.firebase.auth.*
 import com.google.firebase.auth.ktx.auth
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.ktx.Firebase
+import kotlinx.android.synthetic.main.activity_crear_cuenta.*
 import java.util.concurrent.TimeUnit
 
 class CrearCuenta : AppCompatActivity() {
 
-    private lateinit var auth: FirebaseAuth
-
-    private var storedVerificationId: String? = ""
-    private lateinit var resendToken: PhoneAuthProvider.ForceResendingToken
-    private lateinit var callbacks: PhoneAuthProvider.OnVerificationStateChangedCallbacks
+    private lateinit var dbReference: DatabaseReference
+    private lateinit var database: FirebaseDatabase
+    private lateinit var auth:FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
-        auth = Firebase.auth
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_crear_cuenta)
 
-        callbacks = object : PhoneAuthProvider.OnVerificationStateChangedCallbacks() {
+        btn_next.setOnClickListener{
+            valida_registro()
+        }
+
+        auth = FirebaseAuth.getInstance()
+
+    }
 
 
-            override fun onVerificationCompleted(credential: PhoneAuthCredential) {
-                // This callback will be invoked in two situations:
-                // 1 - Instant verification. In some cases the phone number can be instantly
-                //     verified without needing to send or enter a verification code.
-                // 2 - Auto-retrieval. On some devices Google Play services can automatically
-                //     detect the incoming verification SMS and perform verification without
-                //     user action.
-               // Log.d(TAG, "onVerificationCompleted:$credential")
-                signInWithPhoneAuthCredential(credential)
+
+    private fun valida_registro(){
+
+
+        var correo: String = et_correo.text.toString()
+        var contra1: String = et_contra1.text.toString()
+        var contra2: String = et_contra2.text.toString()
+
+        if(!correo.isNullOrBlank() && !contra1.isNullOrBlank() &&
+            !contra2.isNullOrBlank()){
+
+            if(contra1 == contra2){
+
+                registrarFirebase(correo,contra1)
+
+            }else{
+                Toast.makeText(this, "Las contraseña no coinciden",
+                    Toast.LENGTH_SHORT).show()
             }
 
-            override fun onVerificationFailed(e: FirebaseException) {
-                // This callback is invoked in an invalid request for verification is made,
-                // for instance if the the phone number format is not valid.
-                //Log.w(TAG, "onVerificationFailed", e)
-
-                if (e is FirebaseAuthInvalidCredentialsException) {
-                    // Invalid request
-                } else if (e is FirebaseTooManyRequestsException) {
-                    // The SMS quota for the project has been exceeded
-                }
-
-                // Show a message and update the UI
-            }
-
-            override fun onCodeSent(
-                verificationId: String,
-                token: PhoneAuthProvider.ForceResendingToken
-            ) {
-                // The SMS verification code has been sent to the provided phone number, we
-                // now need to ask the user to enter the code and then construct a credential
-                // by combining the code with a verification ID.
-                //Log.d(TAG, "onCodeSent:$verificationId")
-
-                // Save verification ID and resending token so we can use them later
-                storedVerificationId = verificationId
-                resendToken = token
-            }
+        }else{
+            Toast.makeText(this, "Ingresar datos",
+                Toast.LENGTH_SHORT).show()
         }
     }
-
-    private fun iniciarSesion(){
-
-
-    }
-
-
-    private fun resendVerificationCode(
-        phoneNumber: String,
-        token: PhoneAuthProvider.ForceResendingToken?
-    ) {
-        val optionsBuilder = PhoneAuthOptions.newBuilder(auth)
-            .setPhoneNumber(phoneNumber)       // Phone number to verify
-            .setTimeout(60L, TimeUnit.SECONDS) // Timeout and unit
-            .setActivity(this)                 // Activity (for callback binding)
-            .setCallbacks(callbacks)          // OnVerificationStateChangedCallbacks
-        if (token != null) {
-            optionsBuilder.setForceResendingToken(token) // callback's ForceResendingToken
-        }
-        PhoneAuthProvider.verifyPhoneNumber(optionsBuilder.build())
-    }
-
-    public fun verifyPhoneNumberWithCode(verificationId: String?, code: String){
-        val credential = PhoneAuthProvider.getCredential(verificationId!!, code)
-    }
-
-    private fun startPhoneNumberVerification(phoneNumber: String) {
-
-        val options = PhoneAuthOptions.newBuilder(auth)
-            .setPhoneNumber(phoneNumber)
-            .setTimeout(60L, TimeUnit.SECONDS)
-            .setActivity(this)
-            .setCallbacks(callbacks)
-            .build()
-        PhoneAuthProvider.verifyPhoneNumber(options)
-    }
-
-    private fun signInWithPhoneAuthCredential(credential: PhoneAuthCredential) {
-        auth.signInWithCredential(credential)
+    private fun registrarFirebase(email:String, password:String){
+        auth.createUserWithEmailAndPassword(email, password)
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
                     // Sign in success, update UI with the signed-in user's information
-                    //Log.d(TAG, "signInWithCredential:success")
-
-                    val user = task.result?.user
+                    //Log.d(TAG, "createUserWithEmail:success")
+                    val user = auth.currentUser
+                    Toast.makeText(
+                        baseContext,  "\${user.email} se acreado correctamente",
+                        Toast.LENGTH_SHORT).show()
+                    val intent: Intent = Intent(this, BienvenidaA::class.java)
+                    startActivity(intent)
+                    //updateUI(user)
                 } else {
-                    // Sign in failed, display a message and update the UI
-                    //Log.w(TAG, "signInWithCredential:failure", task.exception)
-                    if (task.exception is FirebaseAuthInvalidCredentialsException) {
-                        // The verification code entered was invalid
-                    }
-                    // Update UI
+                    // If sign in fails, display a message to the user.
+                    // Log.w(TAG, "createUserWithEmail:failure", task.exception)
+                    Toast.makeText(baseContext, "Authentication failed.",
+                        Toast.LENGTH_SHORT).show()
+                    //updateUI(null)
                 }
             }
     }

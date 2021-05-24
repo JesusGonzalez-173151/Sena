@@ -29,7 +29,7 @@ class Ingresos : AppCompatActivity() {
         }
 
         btn_vistaIngresos.setOnClickListener{
-            val intent: Intent = Intent(this, Finanzas::class.java)
+            val intent: Intent = Intent(this, IngresosView::class.java)
             startActivity(intent)
         }
     }

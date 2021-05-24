@@ -1,5 +1,3 @@
 package luna.joel.sena
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
 
-data class Finanza (var tipo: String, var cantidad: String, var nota: String){}
+data class Finanza(var tipo: ArrayList<String>, var cantidad:  ArrayList<String>, var nota:  ArrayList<String>){}

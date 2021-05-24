@@ -1,5 +1,6 @@
 package luna.joel.sena
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -26,6 +27,10 @@ class Egresos : AppCompatActivity() {
         btn_egresos.setOnClickListener {
             guardarEgresos()
 
+        }
+        btn_vistaEgresos.setOnClickListener {
+            val intent: Intent= Intent(this, EgresosView::class.java)
+            startActivity(intent)
         }
     }
 

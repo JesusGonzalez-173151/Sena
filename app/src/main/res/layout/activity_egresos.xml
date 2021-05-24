@@ -109,5 +109,15 @@
         android:layout_gravity="center"
         />
 
+    <Button
+        android:id="@+id/btn_vistaEgresos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Ver Egresos"
+        android:background="@drawable/round_button2"
+        android:layout_gravity="center"
+        />
+
 
 </LinearLayout>

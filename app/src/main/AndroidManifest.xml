@@ -15,7 +15,7 @@
         <activity android:name=".PrincipalSaludo" />
         <activity android:name=".BienvenidaC" />
         <activity android:name=".BienvenidaB" />
-        <activity android:name=".MainActivity" />
+        <activity android:name=".Perfil" />
         <activity android:name=".EmailLogin" />
         <activity android:name=".SeleccionarLogin" />
         <activity android:name=".CrearCuenta" />
@@ -29,7 +29,7 @@
         <activity android:name=".BienvenidaA" />
         <activity android:name=".Pincipal" />
         <activity android:name=".Recuperacion" />
-        <activity android:name=".Perfil">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

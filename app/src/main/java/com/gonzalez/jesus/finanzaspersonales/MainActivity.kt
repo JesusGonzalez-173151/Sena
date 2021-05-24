@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
 
         val handler = Handler()
         handler.postDelayed({ // TODO: Your application init goes here.
-            val intent = Intent(this, LoginActivity::class.java)
+            val intent = Intent(this, BienvenidaA::class.java)
             startActivity(intent)
             this.finish()
         }, 4000)

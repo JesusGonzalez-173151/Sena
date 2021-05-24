@@ -72,7 +72,7 @@
                 android:textSize="15sp"
                 android:paddingLeft="15dp"
                 android:fontFamily="@font/objectsans_regular"
-                android:hint="Escribe aqui el nombre completo"
+                android:hint="Escribe aquí el nombre completo"
                 android:textColorHint="@color/gray_hint"
                 android:inputType="textPersonName"
                 android:background="@drawable/round_button"

@@ -38,7 +38,7 @@
         android:layout_marginTop="20dp"
         android:text="@string/sera_sencillo_facil_t"
         android:textSize="25sp"
-        android:fontFamily="@font/OBJECTSANS_HEAVY"
+        android:fontFamily="@font/objectsans_heavy"
         android:textColor="@color/bienvenidas_title"
         />
 
@@ -47,7 +47,7 @@
         android:layout_width="223dp"
         android:layout_height="66dp"
         android:layout_gravity="center"
-        android:fontFamily="@font/OBJECTSANS_REGULAR"
+        android:fontFamily="@font/objectsans_regular"
         android:gravity="top"
         android:text="@string/sera_sencillo_facil_p"
         android:textSize="15sp"

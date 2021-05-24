@@ -41,7 +41,7 @@
         android:layout_marginTop="20dp"
         android:text="@string/estas_preparado_t"
         android:textSize="25sp"
-        android:fontFamily="@font/OBJECTSANS_HEAVY"
+        android:fontFamily="@font/objectsans_heavy"
         android:textColor="@color/bienvenidas_title"
         />
 
@@ -50,7 +50,7 @@
         android:layout_width="223dp"
         android:layout_height="66dp"
         android:layout_gravity="center"
-        android:fontFamily="@font/OBJECTSANS_REGULAR"
+        android:fontFamily="@font/objectsans_regular"
         android:gravity="top"
         android:text="     ¡Sena te da la bienvenida!Ella te apayorá en el camino al éxito de tu control de finanzas.  "
         android:textColor="@color/background_color"

@@ -4,29 +4,31 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
+import kotlinx.android.synthetic.main.activity_egresos_view.*
 import kotlinx.android.synthetic.main.activity_finanzas.*
+import kotlinx.android.synthetic.main.activity_finanzas.gridviewFinanzas
 
 class EgresosView : AppCompatActivity() {
 
     var adaptador: FinanzasAdapter? = null
     var egresos =  ArrayList<Finanza>()
 
-
     private lateinit var storage: FirebaseFirestore
     private lateinit var usuario: FirebaseAuth
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_egresos_view)
+
         storage = FirebaseFirestore.getInstance()
         //Conexion al ususarioGmail
         usuario = FirebaseAuth.getInstance()
 
         fillFinanzas()
+
         if(!egresos.isEmpty()) {
             adaptador = FinanzasAdapter(this, egresos)
-            gridviewFinanzas.adapter = adaptador
+            gridviewEgresos.adapter = adaptador
         }
     }
 
@@ -55,7 +57,7 @@ class EgresosView : AppCompatActivity() {
 
                 }
                 adaptador = FinanzasAdapter(this, egresos)
-                gridviewFinanzas.adapter = adaptador
+                gridviewEgresos.adapter = adaptador
             }
     }
 }

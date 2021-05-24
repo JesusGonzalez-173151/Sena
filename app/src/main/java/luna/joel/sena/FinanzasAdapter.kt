@@ -12,7 +12,7 @@ class FinanzasAdapter: BaseAdapter {
     var context: Context? =null
     var transacciones = ArrayList<Finanza>()
 
-    constructor(context: Context, transacciones:ArrayList<Finanza>){
+    constructor(context: Context, transacciones: ArrayList<Finanza>){
         this.context = context
         this.transacciones = transacciones
     }
@@ -37,7 +37,6 @@ class FinanzasAdapter: BaseAdapter {
         vista.title_ingreso.setText(transaccion.tipo.toString())
         vista.cantida_ingreso.setText(transaccion.cantidad.toString())
         vista.nota_ingreso.setText(transaccion.nota.toString())
-
 
         return vista
 

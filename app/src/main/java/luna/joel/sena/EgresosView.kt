@@ -33,31 +33,28 @@ class EgresosView : AppCompatActivity() {
     }
 
     fun fillFinanzas(){
+        var tipo = ArrayList<String>()
+        var cantidad = ArrayList<String>()
+        var nota = ArrayList<String>()
 
         storage.collection("egresos").whereEqualTo("email", usuario.currentUser?.email)
             .get()
             .addOnSuccessListener {
                 it.forEach {
-                    var tipo = ArrayList<String>()
-                    var cantidad = ArrayList<String>()
-                    var nota = ArrayList<String>()
 
-                    if(it.getString("tipo") != null){
-                        tipo.add(it.toString())
+                    if(!it.getString("tipo").isNullOrEmpty()){
+                        tipo.add("${it.getString("tipo")}")
+                        cantidad.add("${it.getString("cantidad")}")
+                        nota.add("${it.getString("nota")}")
                     }
 
-                    else if(it.getString("cantidad") != null){
-                        cantidad.add(it.toString())
-                    }
-
-                    else if(it.getString("nota") != null){
-                        nota.add(it.toString())
-                    }
                     egresos!!.add(Finanza(tipo!!,cantidad!!,nota!!))
 
                 }
+
                 adaptador = FinanzasAdapter(this, egresos)
                 gridviewEgresos.adapter = adaptador
+
             }
     }
 }

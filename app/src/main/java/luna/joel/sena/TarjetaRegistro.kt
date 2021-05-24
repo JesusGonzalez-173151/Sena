@@ -27,7 +27,10 @@ class TarjetaRegistro : AppCompatActivity() {
             startActivity(intent)
         }
 
-
+        btnverTarjetas.setOnClickListener {
+            val intent: Intent = Intent(this, TarjetasView::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun guardarTarjeta(){

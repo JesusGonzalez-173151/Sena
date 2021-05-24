@@ -34,9 +34,9 @@ class FinanzasAdapter: BaseAdapter {
         var inflator = LayoutInflater.from(this.context)
         var vista = inflator.inflate(R.layout.finansas_view,null)
 
-        vista.title_ingreso.setText(transaccion.tipo.toString())
-        vista.cantida_ingreso.setText(transaccion.cantidad.toString())
-        vista.nota_ingreso.setText(transaccion.nota.toString())
+        vista.title_ingreso.setText(transaccion.tipo.get(p0))
+        vista.cantida_ingreso.setText(transaccion.cantidad.get(p0))
+        vista.nota_ingreso.setText(transaccion.nota.get(p0))
 
         return vista
 

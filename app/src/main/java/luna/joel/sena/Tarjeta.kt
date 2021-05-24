@@ -1,3 +1,3 @@
 package luna.joel.sena
 
-data class Tarjeta(var fecha: String,var nombreT: String, var nombreTarjeta: String, var tipo: String)
+data class Tarjeta(var fecha: ArrayList<String>, var nombre: ArrayList<String>,  var tipo: ArrayList<String>,var numero: ArrayList<String>){}

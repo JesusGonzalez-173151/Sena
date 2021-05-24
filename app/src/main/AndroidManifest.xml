@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Sena">
-        <activity android:name=".EgresosView"></activity>
+        <activity android:name=".TarjetasView"></activity>
+        <activity android:name=".EgresosView" />
         <activity android:name=".IngresosView" />
         <activity android:name=".TarjetaRegistro" />
         <activity android:name=".MotivoActivity" />

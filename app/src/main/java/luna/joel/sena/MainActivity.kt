@@ -37,14 +37,14 @@ class MainActivity : AppCompatActivity() {
         storage = FirebaseFirestore.getInstance()
         //Conexion al ususarioGmail
         usuario = FirebaseAuth.getInstance()
-        fillLogros()
+        //fillLogros()
 
-        if(!logros.isEmpty()){
+        /*if(!logros.isEmpty()){
 
             adaptador = AdaptadorLogros(this,logros)
             gridview2.adapter = adaptador
 
-        }
+        }*/
 
         btn_ingreso.setOnClickListener {
             val intent: Intent= Intent(this, Ingresos::class.java)
@@ -62,22 +62,6 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    fun fillLogros(){
-        storage.collection("metas")
-            .whereEqualTo("correo", usuario.currentUser?.email)
-            .get()
-            .addOnSuccessListener {
-                it.forEach{
-                    var cantidad = ""
-                    if(it.getString("meta")!= null){
-                        cantidad = "0"
-                    }
-                    logros!!.add(Logro(it.getString("meta")!!, cantidad))
-                    }
-                adaptador= AdaptadorLogros(this, logros)
-                gridview2.adapter= adaptador
-                }
-    }
 
     private class AdaptadorLogros: BaseAdapter {
         var logros = ArrayList<Logro>()

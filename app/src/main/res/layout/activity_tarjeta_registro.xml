@@ -146,11 +146,23 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="100dp"
+                android:layout_marginTop="50dp"
                 android:background="@drawable/boton_redondo"
                 android:text=">"
-                android:textColor="@color/bienvenidas_title"
+                android:textColor="@color/white"
                 android:textSize="40sp"
+                />
+
+            <Button
+                android:id="@+id/btnverTarjetas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/boton_redondo"
+                android:text="Tarjetas"
+                android:textColor="@color/white"
+                android:textSize="20sp"
                 />
         </LinearLayout>
 

@@ -20,6 +20,10 @@ class EmailLogin : AppCompatActivity() {
         btn_ingresar.setOnClickListener {
             valida_ingreso()
         }
+        btn_registrarse.setOnClickListener {
+            val intent: Intent = Intent(this, CrearCuenta::class.java)
+            startActivity(intent)
+        }
 
     }
 
@@ -49,7 +53,7 @@ class EmailLogin : AppCompatActivity() {
                     // Log.d(TAG, "signInWithEmail:success")
                     val user = auth.currentUser
                     //updateUI(user)
-                    val intent: Intent = Intent(this, MainActivity::class.java)
+                    val intent: Intent = Intent(this, Principal::class.java)
                     startActivity(intent)
                 } else {
                     // If sign in fails, display a message to the user.

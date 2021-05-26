@@ -7,6 +7,15 @@
     android:layout_height="match_parent"
     android:background="@color/orange_yellow_inicio"
     tools:context=".CrearCuenta">
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/boton_back"
+        android:background="#00FFFFFF"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        />
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -16,136 +25,151 @@
             android:orientation="vertical"
             android:layout_height="match_parent">
 
-            <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/boton_back"
-                />
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="2dp"/>
-
-
             <ImageView
-                android:layout_width="93dp"
-                android:layout_height="100dp"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
                 android:layout_gravity="center"
-                android:layout_marginBottom="20dp"
+                android:layout_marginTop="15dp"
                 android:src="@drawable/logosena_blanco" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="35dp"
                 android:layout_gravity="center"
-                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
                 android:text="Crea tu cuenta"
                 android:textColor="@color/white"
-                android:textSize="30dp" />
+                android:textSize="25dp"
+                android:fontFamily="@font/objectsans_heavy"
+                />
 
             <ImageButton
                 android:id="@+id/imageButton"
-                android:src="@drawable/orange_user"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:background="@drawable/round_button"
-                 />
+                android:layout_marginTop="20dp"
+                android:background="#00FFFFFF"
+                android:src="@drawable/user" />
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="28dp"
-                android:layout_marginLeft="20dp"
-                android:text="Nombre Completo"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="30dp"
+                android:text="Nombre de usuario"
                 android:textColor="@color/white"
-                android:textSize="25dp" />
+                android:textSize="15sp"
+                android:fontFamily="@font/objectsans_heavy"/>
 
             <EditText
-                android:id="@+id/editPersonName"
+                android:layout_marginTop="5dp"
+                android:id="@+id/nombre_usuario"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginHorizontal="30dp"
                 android:ems="10"
-                android:textColor="@color/background_color"
-                android:layout_marginRight="15dp"
-                android:layout_marginLeft="20dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:paddingLeft="15dp"
+                android:fontFamily="@font/objectsans_regular"
+                android:hint="Escribe aqui su nombre de usuario"
+                android:textColorHint="@color/gray_hint"
                 android:inputType="textPersonName"
-                android:background="@drawable/round_button"/>
+                android:background="@drawable/round_button"
+                />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Correo Electronico"
-                android:textSize="25dp"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="30dp"
+                android:text="Correo electrónico"
                 android:textColor="@color/white"
-                />
-
-
-                <EditText
-                    android:id="@+id/et_correo"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="15dp"
-                    android:layout_marginLeft="20dp"
-                    android:background="@drawable/round_button"
-                    android:ems="10"
-                    android:textColor="@color/background_color"
-                    android:textAlignment="center"
-                    android:inputType="textEmailAddress"/>
-
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Contrasenia"
-                android:textSize="25dp"
-                android:layout_marginLeft="20dp"
-                android:textColor="@color/white"
-                />
+                android:textSize="15sp"
+                android:fontFamily="@font/objectsans_heavy"/>
 
             <EditText
+                android:layout_marginTop="5dp"
+                android:id="@+id/et_correo"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginHorizontal="30dp"
+                android:ems="10"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:paddingLeft="15dp"
+                android:fontFamily="@font/objectsans_regular"
+                android:hint="Ingrese su correo electrónico"
+                android:textColorHint="@color/gray_hint"
+                android:inputType="textPersonName"
+                android:background="@drawable/round_button"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="15dp"
+                android:text="Contraseña"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:fontFamily="@font/objectsans_heavy"/>
+
+            <EditText
+                android:layout_marginTop="5dp"
                 android:id="@+id/et_contra1"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginHorizontal="30dp"
                 android:ems="10"
-                android:textColor="@color/background_color"
-                android:layout_marginRight="15dp"
-                android:layout_marginLeft="20dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:fontFamily="@font/objectsans_regular"
+                android:paddingLeft="15dp"
+                android:hint="Ingresa tu nueva constraseña"
+                android:textColorHint="@color/gray_hint"
                 android:inputType="textPassword"
-                android:background="@drawable/round_button"/>
+                android:background="@drawable/round_button"
+                />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Confirmar Contrasenia"
-                android:textSize="25dp"
-                android:layout_marginLeft="20dp"
-
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="15dp"
+                android:text="Confirmar contraseña"
                 android:textColor="@color/white"
-                />
+                android:textSize="15sp"
+                android:fontFamily="@font/objectsans_heavy"/>
 
             <EditText
+                android:layout_marginTop="5dp"
                 android:id="@+id/et_contra2"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginHorizontal="30dp"
                 android:ems="10"
-                android:textColor="@color/background_color"
-                android:layout_marginRight="15dp"
-                android:layout_marginLeft="20dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:paddingLeft="15dp"
+                android:fontFamily="@font/objectsans_regular"
+                android:hint="Confirma tu nueva constraseña"
+                android:textColorHint="@color/gray_hint"
                 android:inputType="textPassword"
-                android:background="@drawable/round_button"/>
-
-            <Button
-                android:id="@+id/btn_registrar"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="15dp"
                 android:background="@drawable/round_button"
-                android:text=">"
-                android:textColor="@color/bienvenidas_title"
-                android:textSize="40sp"
                 />
 
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_registrar"
+                android:layout_width="59dp"
+                android:layout_height="59dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="35dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/boton_next_b"
+                android:textColor="@color/white"
+                />
         </LinearLayout>
     </ScrollView>
 

@@ -5,119 +5,151 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/fondo_inicio"
     tools:context=".Egresos">
 
-    <TableRow
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <LinearLayout
+        android:layout_width="276dp"
+        android:layout_height="480dp"
+        android:orientation="vertical"
         android:layout_gravity="center"
-        android:layout_marginTop="50dp"
-        >
+        android:layout_marginVertical="75dp"
+        android:background="@color/white">
 
-        <ImageView
+        <TableRow
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/orange_money"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:background="@color/white">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/manos_cash"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Egresar"
+                android:textSize="20sp"
+                android:fontFamily="@font/objectsans_heavy"
+                android:textColor="@color/orange_relleno"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                />
+        </TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:text="Tipo de egreso"
+            android:textColor="@color/yellow_inicio"
+            android:textSize="15sp"
+            android:fontFamily="@font/objectsans_heavy"/>
+
+        <EditText
+            android:layout_marginTop="5dp"
+            android:id="@+id/edit_egreso"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginHorizontal="30dp"
+            android:ems="10"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:paddingLeft="15dp"
+            android:fontFamily="@font/objectsans_regular"
+            android:hint="Ingrese el tipo de egreso"
+            android:textColorHint="@color/gray_hint"
+            android:inputType="textPersonName"
+            android:background="@drawable/round_button3"
             />
         <TextView
-            android:textSize="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Egreso"
+            android:layout_gravity="center"
             android:layout_marginTop="15dp"
-            android:layout_marginLeft="10dp"
-            android:textColor="@color/orange_yellow_inicio"
+            android:text="Cantidad de egreso"
+            android:textColor="@color/yellow_inicio"
+            android:textSize="15sp"
+            android:fontFamily="@font/objectsans_heavy"/>
+
+        <EditText
+            android:layout_marginTop="5dp"
+            android:id="@+id/egreso_cantidad"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginHorizontal="30dp"
+            android:ems="10"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:paddingLeft="15dp"
+            android:fontFamily="@font/objectsans_regular"
+            android:hint="Escribe la cantidad $$"
+            android:textColorHint="@color/gray_hint"
+            android:inputType="textPersonName"
+            android:background="@drawable/round_button3"
             />
-    </TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:text="Nota"
+            android:textColor="@color/yellow_inicio"
+            android:textSize="15sp"
+            android:fontFamily="@font/objectsans_heavy"/>
 
+        <EditText
+            android:layout_marginTop="5dp"
+            android:id="@+id/egr_nota"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginHorizontal="30dp"
+            android:ems="10"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:paddingLeft="15dp"
+            android:fontFamily="@font/objectsans_regular"
+            android:hint="Escribir nota..."
+            android:textColorHint="@color/gray_hint"
+            android:inputType="textPersonName"
+            android:background="@drawable/round_button3"
+            />
 
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_egresos"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:background="@drawable/ingresar"
+            android:paddingLeft="20dp"
+            android:text="         Egresar       "
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/objectsans_regular"
+            />
 
-    <TextView
-        android:layout_gravity="center"
-        android:textSize="20dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Tipo Egreso"
-        android:layout_marginTop="15dp"
-        android:textColor="@color/orange_yellow_inicio"
-        />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_vistaEgresos"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/ingresar"
+            android:paddingLeft="20dp"
+            android:text="      Ver egresos  "
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/objectsans_regular"
+            />
 
-    <EditText
-        android:id="@+id/edit_egreso"
-        android:layout_width="150dp"
-        android:layout_height="35dp"
-        android:layout_gravity="center"
-        android:background="@drawable/round_button3"
-        android:layout_marginTop="5dp"
-        android:inputType="text"
-        android:text="Tipo Egreso"
-        android:textAlignment="center"
-        android:textColor="@color/background_color"/>
-
-
-    <TextView
-        android:layout_gravity="center"
-        android:textSize="20dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Cantidad"
-        android:layout_marginTop="15dp"
-        android:textColor="@color/orange_yellow_inicio"
-        />
-
-    <EditText
-        android:id="@+id/egreso_cantidad"
-        android:layout_width="150dp"
-        android:layout_height="35dp"
-        android:layout_gravity="center"
-        android:background="@drawable/round_button3"
-        android:layout_marginTop="5dp"
-        android:inputType="number"
-        android:textAlignment="center"
-        android:textColor="@color/background_color"/>
-
-    <TextView
-        android:layout_gravity="center"
-        android:textSize="20dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Nota"
-        android:layout_marginTop="15dp"
-        android:textColor="@color/orange_yellow_inicio"
-        />
-
-    <EditText
-        android:id="@+id/egr_nota"
-        android:layout_width="150dp"
-        android:layout_height="35dp"
-        android:layout_gravity="center"
-        android:background="@drawable/round_button3"
-        android:layout_marginTop="5dp"
-        android:inputType="text"
-        android:text="nota"
-        android:textAlignment="center"
-        android:textColor="@color/background_color"/>
-
-
-    <Button
-        android:id="@+id/btn_egresos"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="Egresos"
-        android:background="@drawable/round_button2"
-        android:layout_gravity="center"
-        />
-
-    <Button
-        android:id="@+id/btn_vistaEgresos"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="Ver Egresos"
-        android:background="@drawable/round_button2"
-        android:layout_gravity="center"
-        />
-
+    </LinearLayout>
 
 </LinearLayout>

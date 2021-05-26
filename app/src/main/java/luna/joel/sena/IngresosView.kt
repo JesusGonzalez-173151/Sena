@@ -6,8 +6,9 @@ import android.os.Bundle
 
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
-import com.google.firebase.firestore.ktx.getField
 import kotlinx.android.synthetic.main.activity_finanzas.*
+import luna.joel.sena.Adaptadores.FinanzasAdapter
+import luna.joel.sena.Objetos.Finanza
 
 
 class IngresosView : AppCompatActivity() {
@@ -18,6 +19,8 @@ class IngresosView : AppCompatActivity() {
 
     private lateinit var storage: FirebaseFirestore
     private lateinit var usuario: FirebaseAuth
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -59,5 +62,6 @@ class IngresosView : AppCompatActivity() {
 
 
             }
+
     }
 }

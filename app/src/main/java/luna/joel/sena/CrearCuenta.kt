@@ -22,6 +22,8 @@ class CrearCuenta : AppCompatActivity() {
         setContentView(R.layout.activity_crear_cuenta)
 
         btn_registrar.setOnClickListener{
+            val intent: Intent= Intent(this, EgresosView::class.java)
+            startActivity(intent)
             valida_registro()
         }
 
@@ -35,6 +37,8 @@ class CrearCuenta : AppCompatActivity() {
         var correo: String = et_correo.text.toString()
         var contra1: String = et_contra1.text.toString()
         var contra2: String = et_contra2.text.toString()
+
+
 
         if(!correo.isNullOrBlank() && !contra1.isNullOrBlank() &&
             !contra2.isNullOrBlank()){

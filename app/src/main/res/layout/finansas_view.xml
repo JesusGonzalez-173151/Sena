@@ -3,27 +3,48 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
+    android:layout_marginTop="15dp"
     >
-
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="250dp"
+    android:layout_height="115dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginTop="15dp"
+    android:background="@drawable/round_button"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/title_ingreso"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/bienvenidas_title"
+        android:textSize="25dp"
+        android:layout_marginLeft="30dp"
         android:text="TextView" />
 
     <TextView
         android:id="@+id/cantida_ingreso"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="@color/yellow_inicio"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="30dp"
         android:text="TextView" />
 
     <TextView
         android:id="@+id/nota_ingreso"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:textSize="20dp"
+        android:textColor="@color/yellow_inicio"
+        android:layout_marginLeft="30dp"
         android:text="TextView" />
 
-
-
+</LinearLayout>
+    </ScrollView>
 </LinearLayout>

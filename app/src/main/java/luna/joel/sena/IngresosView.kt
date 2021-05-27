@@ -6,34 +6,32 @@ import android.os.Bundle
 
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
-import kotlinx.android.synthetic.main.activity_finanzas.*
+import kotlinx.android.synthetic.main.activity_egresos_view.*
+import kotlinx.android.synthetic.main.activity_ingresos_view.*
 import luna.joel.sena.Adaptadores.FinanzasAdapter
+
 import luna.joel.sena.Objetos.Finanza
 
 
 class IngresosView : AppCompatActivity() {
 
-
     var adaptador: FinanzasAdapter? = null
-    var finanzas =  ArrayList<Finanza>()
+    var ingresos =  ArrayList<Finanza>()
 
     private lateinit var storage: FirebaseFirestore
     private lateinit var usuario: FirebaseAuth
 
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_finanzas)
+        setContentView(R.layout.activity_ingresos_view)
 
         storage = FirebaseFirestore.getInstance()
-        //Conexion al ususarioGmail
         usuario = FirebaseAuth.getInstance()
 
         fillFinanzas()
-        if(!finanzas.isEmpty()) {
-            adaptador = FinanzasAdapter(this, finanzas)
-            gridviewFinanzas.adapter = adaptador
+        if(!ingresos.isEmpty()) {
+            adaptador = FinanzasAdapter(this, ingresos)
+            gridviewIngresos.adapter = adaptador
         }
     }
 
@@ -53,15 +51,13 @@ class IngresosView : AppCompatActivity() {
                         nota.add("${it.getString("nota")}")
                     }
 
-                    finanzas!!.add(Finanza(tipo!!,cantidad!!,nota!!))
+                    ingresos!!.add(Finanza(tipo!!,cantidad!!,nota!!))
 
                 }
 
-                adaptador = FinanzasAdapter(this, finanzas)
-                gridviewFinanzas.adapter = adaptador
-
+                adaptador = FinanzasAdapter(this, ingresos)
+                gridviewIngresos.adapter = adaptador
 
             }
-
     }
 }

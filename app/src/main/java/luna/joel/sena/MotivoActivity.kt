@@ -12,7 +12,6 @@ class MotivoActivity : AppCompatActivity() {
 
     private lateinit var storage: FirebaseFirestore
     private lateinit var usuario: FirebaseAuth
-    private var motivo: String = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -35,7 +34,7 @@ class MotivoActivity : AppCompatActivity() {
         }
 
         otro.setOnClickListener{
-            val motivo = "viajar"
+            val motivo = "otro"
             guardarMotivo(motivo)
         }
 
@@ -47,14 +46,16 @@ class MotivoActivity : AppCompatActivity() {
     }
 
     private fun guardarMotivo(motivo: String){
+
         val motivacion = hashMapOf(
-        "meta" to motivo
+            "meta" to motivo,
+            "email" to usuario.currentUser?.email
         )
 
 
         storage.collection("metas").add(motivacion).addOnSuccessListener {
             Toast.makeText(this,"Motivacion agregada", Toast.LENGTH_SHORT).show()
-            val intent: Intent = Intent(this, MainActivity::class.java)
+            val intent: Intent = Intent(this, Principal::class.java)
             startActivity(intent)
         }.addOnFailureListener {
             Toast.makeText(this,"Error: Intente de Nuevo", Toast.LENGTH_SHORT).show()

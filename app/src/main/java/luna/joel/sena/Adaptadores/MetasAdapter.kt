@@ -11,20 +11,20 @@ import luna.joel.sena.Objetos.Meta
 import luna.joel.sena.R
 
 class MetasAdapter: BaseAdapter {
-    var metas = ArrayList<Meta>()
+    var meta = ArrayList<Meta>()
     var context: Context? = null
 
-    constructor(contexto: Context, metas: ArrayList<Meta>){
+    constructor(contexto: Context, meta: ArrayList<Meta>){
         this.context = contexto
-        this.metas = metas
+        this.meta = meta
     }
 
     override fun getCount(): Int {
-        return metas.size
+        return meta.size
     }
 
     override fun getItem(p0: Int): Any {
-        return metas[p0]
+        return meta[p0]
     }
 
     override fun getItemId(p0: Int): Long {
@@ -32,12 +32,12 @@ class MetasAdapter: BaseAdapter {
     }
 
     override fun getView(p0: Int, p1: View?, p2: ViewGroup?): View {
-        var meta = metas[p0]
+        var metasP = meta[p0]
         var inflador = LayoutInflater.from(this.context)
         var vista = inflador.inflate(R.layout.metas_views, null)
 
 
-        vista.metaNombre.setText(meta.meta.get(p0))
+        vista.metaNombre.setText(metasP.meta.get(p0))
 
         return vista
     }

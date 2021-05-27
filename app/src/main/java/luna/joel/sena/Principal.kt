@@ -5,11 +5,13 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
+import kotlinx.android.synthetic.main.activity_ingresos_view.*
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_main.btn_egreso
 import kotlinx.android.synthetic.main.activity_main.btn_ingreso
 import kotlinx.android.synthetic.main.activity_main.senna_pro
 import kotlinx.android.synthetic.main.activity_principal.*
+import luna.joel.sena.Adaptadores.FinanzasAdapter
 import luna.joel.sena.Adaptadores.MetasAdapter
 import luna.joel.sena.Objetos.Meta
 
@@ -26,12 +28,21 @@ class Principal : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_principal)
 
-        fillMetas()
+        //fillMetas()
 
+        if(!metas.isEmpty()) {
+            adaptador = MetasAdapter(this, metas)
+            gridviewMetasPrincipal.adapter = adaptador
+        }
         storage = FirebaseFirestore.getInstance()
 
         usuario = FirebaseAuth.getInstance()
 
+
+        btnMotivacion.setOnClickListener{
+            val intent: Intent = Intent(this, MotivoActivity::class.java)
+            startActivity(intent)
+        }
 
         btn_ingreso.setOnClickListener {
             val intent: Intent = Intent(this, Ingresos::class.java)
@@ -50,22 +61,20 @@ class Principal : AppCompatActivity() {
     }
 
 
-
-    fun fillMetas(){
+    /*fun fillMetas(){
         var meta = ArrayList<String>()
 
-        storage.collection("tarjetero").whereEqualTo("email", usuario.currentUser?.email)
+        storage.collection("metas").whereEqualTo("email", usuario.currentUser?.email)
         .get()
         .addOnSuccessListener {
             it.forEach {
-
                 if(!it.getString("meta").isNullOrEmpty()){
-                    meta.add("${it.getString("meta")!!}")
+                    meta.add("${it.getString("meta")}")
                 }
                 metas!!.add(Meta(meta!!))
             }
             adaptador = MetasAdapter(this, metas)
             gridviewMetasPrincipal.adapter = adaptador
         }
-    }
+    }*/
 }

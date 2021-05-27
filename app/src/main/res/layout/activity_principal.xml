@@ -184,31 +184,21 @@
 
             </TableRow>
 
-            <TextView
+            <Button
+                android:id="@+id/btnMotivacion"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="35dp"
                 android:text="Mis Metas"
-                android:textColor="@color/orange_relleno"
-                android:textSize="15sp"
                 android:layout_marginLeft="45dp"
                 android:layout_marginTop="25dp"
+                android:background="@color/white"
                 android:fontFamily="@font/objectsans_heavy"
-                />
+                android:textColor="@color/orange_relleno"/>
 
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
-                >
-
-            <GridView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:id="@+id/gridviewMetasPrincipal"
-                />
-
-            </LinearLayout>
+                <GridView
+                    android:id="@+id/gridviewMetasPrincipal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
 
             <LinearLayout
                 android:layout_width="match_parent"

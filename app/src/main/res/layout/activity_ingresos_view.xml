@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".EgresosView"
-    android:background="@color/orange_yellow_inicio">
+    android:background="@color/orange_yellow_inicio"
+    tools:context=".IngresosView">
 
     <TableRow
         android:layout_width="wrap_content"
@@ -24,7 +24,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Egresos"
+            android:text="Ingresos"
             android:textSize="30sp"
             android:fontFamily="@font/objectsans_heavy"
             android:textColor="@color/orange_relleno"
@@ -32,9 +32,8 @@
             android:layout_gravity="center"
             />
     </TableRow>
-
-    <GridView
-        android:id="@+id/gridviewEgresos"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+            <GridView
+            android:id="@+id/gridviewIngresos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
 </LinearLayout>

@@ -41,10 +41,5 @@ class FinanzasAdapter: BaseAdapter {
         vista.nota_ingreso.setText(transaccion.nota.get(p0))
 
         return vista
-
     }
-
-
-
-
 }
